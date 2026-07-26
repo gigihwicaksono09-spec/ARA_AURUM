@@ -1,0 +1,44 @@
+{
+  "configVersion": 2,
+  "minAppVersion": "5.0.0",
+  "webSelectors": {
+    "textbox": [
+      "[contenteditable=\"true\"][role=\"textbox\"]",
+      ".ql-editor[contenteditable=\"true\"]",
+      "rich-textarea [contenteditable=\"true\"]",
+      "[contenteditable=\"true\"]",
+      "textarea"
+    ],
+    "send": [
+      "button[aria-label=\"Send message\"]",
+      "button[aria-label=\"Kirim pesan\"]",
+      "button[data-testid=\"send-button\"]"
+    ],
+    "dropzone": [
+      "input[type=\"file\"]",
+      "[data-serverside-action*=\"upload\" i]",
+      "[class*=\"dropzone\" i]",
+      "[class*=\"upload\" i][class*=\"area\" i]"
+    ],
+    "generating": [
+      "[aria-busy=\"true\"]",
+      "[role=\"progressbar\"]",
+      "[aria-label*=\"Loading\" i]",
+      "[aria-label*=\"Memuat\" i]",
+      "mat-progress-spinner",
+      "[class*=\"loading\" i][class*=\"indicator\" i]"
+    ],
+    "resultImg": {
+      "minSize": 200,
+      "exclude": ["avatar", "icon", "logo", "emoji", "svg", "gstatic", "favicon"]
+    }
+  },
+  "modelRegistry": {
+    "geminiWeb": { "label": "Gemini Web (gratis)", "status": "ok" },
+    "geminiApi": { "id": "gemini-3.1-flash-image-preview", "status": "ok", "note": "" },
+    "gptApi": { "id": "gpt-image-1", "status": "ok", "note": "" },
+    "openrouterFree": [],
+    "recommend": { "interior": "geminiWeb", "sketch": "geminiWeb" }
+  },
+  "announcement": null
+}
