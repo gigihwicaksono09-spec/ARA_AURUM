@@ -1,5 +1,5 @@
 {
-  "configVersion": 2,
+  "configVersion": 3,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -40,5 +40,11 @@
     "openrouterFree": [],
     "recommend": { "interior": "geminiWeb", "sketch": "geminiWeb" }
   },
-  "announcement": null
+  "announcement": {
+    "id": "v4.2.3",
+    "level": "success",
+    "showOnce": true,
+    "msg_id": "ARA 4.2.3 aktif — kamu di versi terbaru. Cuaca (MENDUNG/KABUT/HUJAN), orang & kendaraan, dan spot lampu sekarang benar-benar berpengaruh ke hasil generate.",
+    "msg_en": "ARA 4.2.3 is live — you're on the latest build. Weather (overcast/fog/rain), people & vehicles, and light spots now genuinely affect your generated results."
+  }
 }
