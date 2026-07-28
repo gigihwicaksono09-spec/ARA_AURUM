@@ -1,5 +1,5 @@
 {
-  "configVersion": 4,
+  "configVersion": 5,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -41,10 +41,10 @@
     "recommend": { "interior": "geminiWeb", "sketch": "geminiWeb" }
   },
   "announcement": {
-    "id": "v4.2.5",
+    "id": "v4.2.6",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.2.5 sudah tersedia (perbaikan masa coba & notifikasi update). Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis.",
-    "msg_en": "ARA 4.2.5 is available (trial and update-notification fixes). If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates."
+    "msg_id": "ARA 4.2.6 sudah tersedia — kualitas foto diperbaiki: karakter profil kamera, grade editorial, dan film grain kini benar-benar terkirim ke Gemini (sebelumnya diam-diam hilang di mode render/3D). Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis.",
+    "msg_en": "ARA 4.2.6 is available — photographic quality fixes: camera-profile character, editorial grade, and film grain now actually reach Gemini (they were silently dropped in render/3D mode). If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates."
   }
 }
