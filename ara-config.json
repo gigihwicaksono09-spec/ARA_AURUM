@@ -1,5 +1,5 @@
 {
-  "configVersion": 3,
+  "configVersion": 4,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -41,10 +41,10 @@
     "recommend": { "interior": "geminiWeb", "sketch": "geminiWeb" }
   },
   "announcement": {
-    "id": "v4.2.3",
-    "level": "success",
+    "id": "v4.2.5",
+    "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.2.3 aktif — kamu di versi terbaru. Cuaca (MENDUNG/KABUT/HUJAN), orang & kendaraan, dan spot lampu sekarang benar-benar berpengaruh ke hasil generate.",
-    "msg_en": "ARA 4.2.3 is live — you're on the latest build. Weather (overcast/fog/rain), people & vehicles, and light spots now genuinely affect your generated results."
+    "msg_id": "ARA 4.2.5 sudah tersedia (perbaikan masa coba & notifikasi update). Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis.",
+    "msg_en": "ARA 4.2.5 is available (trial and update-notification fixes). If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates."
   }
 }
