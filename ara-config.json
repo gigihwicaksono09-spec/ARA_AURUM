@@ -1,5 +1,5 @@
 {
-  "configVersion": 7,
+  "configVersion": 8,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -30,21 +30,43 @@
     ],
     "resultImg": {
       "minSize": 200,
-      "exclude": ["avatar", "icon", "logo", "emoji", "svg", "gstatic", "favicon"]
+      "exclude": [
+        "avatar",
+        "icon",
+        "logo",
+        "emoji",
+        "svg",
+        "gstatic",
+        "favicon"
+      ]
     }
   },
   "modelRegistry": {
-    "geminiWeb": { "label": "Gemini Web (gratis)", "status": "ok" },
-    "geminiApi": { "id": "gemini-3.1-flash-image-preview", "status": "ok", "note": "" },
-    "gptApi": { "id": "gpt-image-1", "status": "ok", "note": "" },
+    "geminiWeb": {
+      "label": "Gemini Web (gratis)",
+      "status": "ok"
+    },
+    "geminiApi": {
+      "id": "gemini-3.1-flash-image-preview",
+      "status": "ok",
+      "note": ""
+    },
+    "gptApi": {
+      "id": "gpt-image-1",
+      "status": "ok",
+      "note": ""
+    },
     "openrouterFree": [],
-    "recommend": { "interior": "geminiWeb", "sketch": "geminiWeb" }
+    "recommend": {
+      "interior": "geminiWeb",
+      "sketch": "geminiWeb"
+    }
   },
   "announcement": {
-    "id": "v4.4.0",
+    "id": "v4.4.1",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.4.0 NANO EDITION sudah tersedia — kunci geometri kini menyala otomatis begitu kamu mengunggah gambar (sebelumnya hanya aktif kalau kamu membuka MODE DETAIL sendiri), panggung tidak lagi berkedip ke halaman Gemini saat proses berjalan, lampiran gambar tidak lagi terkirim dobel, dan autopilot menyenggol sendiri saat Gemini membalas teks. Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis. Installer belum ditandatangani digital, jadi SmartScreen akan memperingatkan: pilih More info → Run anyway.",
-    "msg_en": "ARA 4.4.0 NANO EDITION is available — geometry lock now switches on automatically as soon as you upload an image (previously it only applied if you opened DETAIL MODE yourself), the stage no longer flashes the Gemini page mid-run, image attachments are no longer sent twice, and autopilot nudges itself when Gemini replies with text instead of an image. If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates. The installer is not code-signed, so SmartScreen will warn you: choose More info → Run anyway."
+    "msg_id": "ARA 4.4.1 sudah tersedia — GENERATE kini menyelesaikan pekerjaannya sendiri: mengirim, menangkap hasil, lalu memberi skor kesetiaan, dan tombol HASIL menyala hijau saat siap dibuka. Halaman Gemini tidak lagi tersembunyi saat GENERATE (layar login/persetujuan sempat muncul di luar jendela sehingga proses terlihat menggantung), generate kedua tidak lagi gagal mengunggah, dan ada tombol PANDUAN baru di bilah atas. Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis. Installer belum ditandatangani digital, jadi SmartScreen akan memperingatkan: pilih More info -> Run anyway.",
+    "msg_en": "ARA 4.4.1 is available — GENERATE now finishes the job on its own: it sends, captures the result, then scores fidelity, and the RESULTS button turns green when it is ready to open. The Gemini page is no longer hidden during GENERATE (sign-in and consent screens used to appear outside the window, so the app looked stuck), a second generate no longer fails to upload, and there is a new GUIDE button in the top bar. If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates. The installer is not code-signed, so SmartScreen will warn you: choose More info -> Run anyway."
   }
 }
