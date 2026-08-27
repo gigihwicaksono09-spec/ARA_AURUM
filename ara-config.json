@@ -1,5 +1,5 @@
 {
-  "configVersion": 6,
+  "configVersion": 7,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -41,10 +41,10 @@
     "recommend": { "interior": "geminiWeb", "sketch": "geminiWeb" }
   },
   "announcement": {
-    "id": "v4.3.0",
+    "id": "v4.4.0",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.3.0 sudah tersedia — 43 preset bawaan kini lengkap (kamera, jam, material, staffage, grade), preset baru untuk Visualization Mode, dan perbaikan tampilan AURUM shell. Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis.",
-    "msg_en": "ARA 4.3.0 is available — all 43 built-in presets now ship a complete photography kit (camera, time of day, material, staffage, grade), new Visualization Mode presets, and AURUM shell visual polish. If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates."
+    "msg_id": "ARA 4.4.0 NANO EDITION sudah tersedia — kunci geometri kini menyala otomatis begitu kamu mengunggah gambar (sebelumnya hanya aktif kalau kamu membuka MODE DETAIL sendiri), panggung tidak lagi berkedip ke halaman Gemini saat proses berjalan, lampiran gambar tidak lagi terkirim dobel, dan autopilot menyenggol sendiri saat Gemini membalas teks. Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis. Installer belum ditandatangani digital, jadi SmartScreen akan memperingatkan: pilih More info → Run anyway.",
+    "msg_en": "ARA 4.4.0 NANO EDITION is available — geometry lock now switches on automatically as soon as you upload an image (previously it only applied if you opened DETAIL MODE yourself), the stage no longer flashes the Gemini page mid-run, image attachments are no longer sent twice, and autopilot nudges itself when Gemini replies with text instead of an image. If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates. The installer is not code-signed, so SmartScreen will warn you: choose More info → Run anyway."
   }
 }
