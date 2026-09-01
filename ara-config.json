@@ -1,5 +1,5 @@
 {
-  "configVersion": 8,
+  "configVersion": 9,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.4.1",
+    "id": "v4.4.2",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.4.1 sudah tersedia — GENERATE kini menyelesaikan pekerjaannya sendiri: mengirim, menangkap hasil, lalu memberi skor kesetiaan, dan tombol HASIL menyala hijau saat siap dibuka. Halaman Gemini tidak lagi tersembunyi saat GENERATE (layar login/persetujuan sempat muncul di luar jendela sehingga proses terlihat menggantung), generate kedua tidak lagi gagal mengunggah, dan ada tombol PANDUAN baru di bilah atas. Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis. Installer belum ditandatangani digital, jadi SmartScreen akan memperingatkan: pilih More info -> Run anyway.",
-    "msg_en": "ARA 4.4.1 is available — GENERATE now finishes the job on its own: it sends, captures the result, then scores fidelity, and the RESULTS button turns green when it is ready to open. The Gemini page is no longer hidden during GENERATE (sign-in and consent screens used to appear outside the window, so the app looked stuck), a second generate no longer fails to upload, and there is a new GUIDE button in the top bar. If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates. The installer is not code-signed, so SmartScreen will warn you: choose More info -> Run anyway."
+    "msg_id": "ARA 4.4.2 sudah tersedia — ada kenop EXPOSURE baru (−2 sampai +2 EV) di SETELAN → KAMERA untuk mengatur seberapa terang Gemini diminta memotret; posisi 0 NORMAL adalah bawaan dan tidak mengubah apa pun dari versi sebelumnya. Permukaan putih polos dari SketchUp tidak lagi ditebak-tebak menjadi beton atau melenceng ke krem — sekarang dirender konsisten sebagai cat, dan warna netral dijaga tetap netral. Tombol Perbaiki Sumber kini benar-benar mengganti gambar yang tampil di layar (sebelumnya hasilnya tersimpan tetapi tidak pernah ditampilkan ulang). Catatan jujur: toggle Ruang Tertutup masih membuang instruksi pencahayaan, jadi interior tertutup masih bisa terasa gelap — itu sedang dikerjakan untuk versi berikutnya. Kalau kamu tidak melihat tawaran update otomatis, unduh manual di github.com/gigihwicaksono09-spec/ARA_AURUM/releases — versi masa coba dan edisi portable memang tidak dapat update otomatis. Installer belum ditandatangani digital, jadi SmartScreen akan memperingatkan: pilih More info -> Run anyway.",
+    "msg_en": "ARA 4.4.2 is available — there is a new EXPOSURE control (−2 to +2 EV) under SETTINGS → CAMERA for how bright Gemini is asked to shoot; the 0 NORMAL position is the default and changes nothing from the previous version. Plain white SketchUp surfaces are no longer guessed into concrete or drifted to beige — they now render consistently as paint, and neutral colours are kept neutral. The Fix Source button now actually replaces the image shown on screen (previously the result was saved but never re-displayed). Honest note: the Closed Room toggle still drops the lighting instructions, so enclosed interiors can still come out dark — that is being worked on for the next version. If you don't see an automatic update prompt, download it manually at github.com/gigihwicaksono09-spec/ARA_AURUM/releases — trial installs and the portable edition don't receive automatic updates. The installer is not code-signed, so SmartScreen will warn you: choose More info -> Run anyway."
   }
 }
