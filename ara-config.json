@@ -1,5 +1,5 @@
 {
-  "configVersion": 13,
+  "configVersion": 14,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.5.0",
+    "id": "v4.5.1",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.5.0 hadir dengan MODE CERITA: satu desain jadi seri foto ala majalah lengkap dengan model — keseharian, editorial, atau kampanye fashion. 14 model siap pakai, busana otomatis, gaya 80 brand, hijab, SURPRISE ME, dan 16 RESEP SIAP PAKAI (termasuk kantor): sekali klik, lalu GENERATE. Tombolnya di sebelah MODE DETAIL. Tidak muncul update otomatis? Unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.5.0 brings STORY MODE: one design becomes a magazine-style photo series with models — daily life, editorial or fashion campaign. 14 ready models, automatic outfits, the style of 80 brands, hijab, SURPRISE ME and 16 READY RECIPES (office included): one click, then GENERATE. The button sits next to DETAIL MODE. No automatic update prompt? Download it at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.5.1 hadir dengan MODE ANALISIS KINERJA: 10 papan analisis berlatar putih — matahari, radiasi, angin (CFD), energi & GREENSHIP/LEED, HVAC, air, listrik, net zero, evakuasi, diagram lapisan — untuk semua jenis bangunan. Ketik kota proyek, sudut matahari dihitung ARA. Cari preset [ANALISIS]. Tidak muncul update otomatis? Unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.5.1 brings PERFORMANCE ANALYSIS MODE: 10 white analysis boards — sun path, solar radiation, wind (CFD), energy & GREENSHIP/LEED, HVAC, water, electrical, net zero, evacuation, layer diagram — for any building type. Type the project city and ARA computes the sun angles. Look for the [ANALISIS] presets. No automatic update prompt? Download it at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
