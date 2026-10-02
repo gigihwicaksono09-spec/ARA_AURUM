@@ -1,5 +1,5 @@
 {
-  "configVersion": 14,
+  "configVersion": 15,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.5.1",
+    "id": "v4.6.0",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.5.1 hadir dengan MODE ANALISIS KINERJA: 10 papan analisis berlatar putih — matahari, radiasi, angin (CFD), energi & GREENSHIP/LEED, HVAC, air, listrik, net zero, evakuasi, diagram lapisan — untuk semua jenis bangunan. Ketik kota proyek, sudut matahari dihitung ARA. Cari preset [ANALISIS]. Tidak muncul update otomatis? Unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.5.1 brings PERFORMANCE ANALYSIS MODE: 10 white analysis boards — sun path, solar radiation, wind (CFD), energy & GREENSHIP/LEED, HVAC, water, electrical, net zero, evacuation, layer diagram — for any building type. Type the project city and ARA computes the sun angles. Look for the [ANALISIS] presets. No automatic update prompt? Download it at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.6.0: tampilan RANA, Studio dengan seleksi dan simpan versi, Deck proyek/pustaka, serta Autopilot dengan jangkar acuan. Satu installer untuk semua: ARA- = Umum, ARO- = Office; masa coba mendapat bonus Deck. Pengguna Office: tutup ARA lama, pasang installer yang sama. Unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.6.0: RANA interface, Studio selection and saved versions, Deck projects/image library, and reference anchors for Autopilot. One installer: ARA- = General, ARO- = Office; trial includes bonus Deck access. Office users: close the old ARA app and install the same installer. Download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
