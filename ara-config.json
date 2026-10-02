@@ -1,5 +1,5 @@
 {
-  "configVersion": 15,
+  "configVersion": 16,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.6.0",
-    "level": "info",
+    "id": "v4.6.1",
+    "level": "warn",
     "showOnce": true,
-    "msg_id": "ARA 4.6.0: tampilan RANA, Studio dengan seleksi dan simpan versi, Deck proyek/pustaka, serta Autopilot dengan jangkar acuan. Satu installer untuk semua: ARA- = Umum, ARO- = Office; masa coba mendapat bonus Deck. Pengguna Office: tutup ARA lama, pasang installer yang sama. Unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.6.0: RANA interface, Studio selection and saved versions, Deck projects/image library, and reference anchors for Autopilot. One installer: ARA- = General, ARO- = Office; trial includes bonus Deck access. Office users: close the old ARA app and install the same installer. Download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.6.1 — perbaikan penting: Gemini yang berputar lama lalu gagal membuat gambar di Mode Cerita (arsitektur + model) sudah diperbaiki, begitu juga \"Gagal Kirim — Prompt belum masuk utuh\" saat memakai catatan area bernomor. Juga: jendela Log dan Proyek di tab Gemini tidak lagi terpotong, dan ukuran halaman Gemini kembali normal. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.6.1 — important fix: Gemini spinning for minutes and then failing to create an image in Story Mode (architecture + model) is fixed, and so is \"Send failed — prompt not fully entered\" when numbered area notes are used. Also: the Log and Project windows on the Gemini tab are no longer cut off, and the Gemini page is back to normal size. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
