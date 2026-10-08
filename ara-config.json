@@ -1,5 +1,5 @@
 {
-  "configVersion": 17,
+  "configVersion": 18,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.7.0",
+    "id": "v4.8.0",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.7.0 — baru: plugin SketchUp \"ARA Scene\" (kunci rasio kamera, tombol simpan/perbarui scene di toolbar, ekspor semua scene sekaligus; dipasang otomatis ke SketchUp 2019–2026 lewat Sistem → SketchUp, bisa mematikan pop-up saat SketchUp dibuka). Edisi kantor: Proyek cukup \"Pilih folder proyek\" — folder render (mis. 007 RENDER) dan REV bertanggal dibuat otomatis, ekspor SketchUp masuk RAW RENDER, katalog material notasi dipakai bersama satu tim. Mode Cerita: SURPRISE ME kini memberi konsep foto utuh (momen + arahan komposisi & cahaya), pilihan PORSI ORANG supaya arsitektur tetap jadi bintang, dan panggung bisa memilih/menyembunyikan hasil. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.7.0 — new: the \"ARA Scene\" SketchUp plugin (lock the camera ratio, save/update scene buttons on the toolbar, export all scenes at once; installed automatically into SketchUp 2019–2026 via System → SketchUp, can silence pop-ups when SketchUp starts). Office edition: Project now only needs \"Choose project folder\" — the render folder (e.g. 007 RENDER) and dated REVs are created automatically, SketchUp exports land in RAW RENDER, and the notation material catalogue is shared across the team. Story Mode: SURPRISE ME now gives a full photo concept (moment + composition & light direction), a PERSON SIZE choice so the architecture stays the star, and the stage can pick/hide results. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.8.0 — baru: PANORAMA 360. Di SketchUp klik Potret 360 (plugin ARA Scene 1.4.3, dipasang otomatis): pilih tempat simpan, lalu jadi JPEG 360 siap pakai dan langsung masuk panggung ARA dengan Mode 360 (tombol 360 hijau). Atur preset, cahaya, jam, cuaca, notasi seperti biasa, GENERATE — sambungan kiri-kanan ditambal otomatis, putar di ARA atau Ekspor ke browser untuk klien (satu berkas, tanpa internet). Studio: hapus banyak gambar sekaligus. Edisi kantor: memilih folder DESIGN kini membuka daftar proyek (perbaikan). Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.8.0 — new: PANORAMA 360. In SketchUp click 360 Capture (ARA Scene plugin 1.4.3, installed automatically): choose where to save, get a ready-to-use 360 JPEG, and it lands on the ARA stage in 360 mode (green 360 button). Set preset, light, time, weather and notes as usual, GENERATE — the left/right seam is patched automatically; spin it in ARA or Export to browser for your client (one file, no internet needed). Studio: delete many images at once. Office edition: choosing the DESIGN folder now opens the project list (fix). Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
