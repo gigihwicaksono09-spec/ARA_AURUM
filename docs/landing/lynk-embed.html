@@ -138,14 +138,13 @@
 /* AKHIR */
 .ara5 .end{text-align:left}
 .ara5 .end .big{font-size:clamp(76px,17vw,300px);color:transparent;-webkit-text-stroke:1.5px var(--fg);transition:color .5s,-webkit-text-stroke-color .5s;cursor:default}
-.ara5 .end .big:hover,.ara5 .end.in .big{color:var(--fg)}
+.ara5 .end .big:hover,.ara5 .end.in .big,.ara5:not(.io) .end .big{color:var(--fg)}
 .ara5 .end .row{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:end;margin-top:36px}
 .ara5 .end .row p{max-width:520px;color:var(--dim)}
 .ara5 .foot{padding:28px var(--pad);border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:var(--dim)}
 /* MUNCUL */
-.ara5 .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
-.ara5 .rv.in{opacity:1;transform:none}
-.ara5.nojs .rv{opacity:1;transform:none}
+.ara5.io .rv:not(.in){opacity:0;transform:translateY(28px)}
+.ara5 .rv{transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
 @media (max-width:900px){
   .ara5 .nav nav{display:none}
   .ara5 .head{grid-template-columns:1fr}
@@ -298,8 +297,9 @@
   stage.addEventListener('pointerdown',function(e){if(e.target.closest('a'))return;held=true;cancelAnimationFrame(run);stage.setPointerCapture(e.pointerId);dragY(e)});
   stage.addEventListener('pointermove',function(e){if(held)dragY(e)});
   stage.addEventListener('pointerup',function(){held=false});stage.addEventListener('pointercancel',function(){held=false});
-  setY(still?100:0);addEventListener('resize',function(){setY(parseFloat(stage.style.getPropertyValue('--y'))||0)});
-  new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!held)sweep()})},{threshold:.6}).observe(stage);
+  setY(100);   // tanpa IO yang terbukti jalan: langsung keadaan foto (aman)addEventListener('resize',function(){setY(parseFloat(stage.style.getPropertyValue('--y'))||0)});
+  // IO di iframe Lynk tak selalu menyala (11/10: konten kosong) → efek muncul HANYA aktif sesudah IO terbukti memanggil balik
+  var ioOk=false;try{new IntersectionObserver(function(es){es.forEach(function(e){if(!ioOk){ioOk=true;R.classList.add('io');if(e.isIntersecting&&!held){setY(0);sweep()}}else if(e.isIntersecting&&!held)sweep()})},{threshold:.6}).observe(stage)}catch(err){}
   // PASANGAN: geser garis, sapuan otomatis saat pertama terlihat
   R.querySelectorAll('[data-pair]').forEach(function(f){var drag=false,auto=null;
     function set(cx){var r=f.getBoundingClientRect();f.style.setProperty('--x',Math.max(0,Math.min(100,(cx-r.left)/r.width*100))+'%')}
@@ -310,8 +310,9 @@
     f.addEventListener('keydown',function(e){var x=parseFloat(getComputedStyle(f).getPropertyValue('--x'))||50;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();f.style.setProperty('--x',Math.max(0,Math.min(100,x+(e.key==='ArrowLeft'?-5:5)))+'%')}});
     f._sweep=function(){if(still)return;var s=null;function st(ts){if(s===null)s=ts;var k=Math.min(1,(ts-s)/1800),v=k<.5?90-80*(k/.5):10+40*((k-.5)/.5);f.style.setProperty('--x',v+'%');if(k<1&&!drag)auto=requestAnimationFrame(st)}auto=requestAnimationFrame(st)}});
   // MUNCUL
+  if(window.IntersectionObserver){
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');if(e.target._sweep)e.target._sweep();io.unobserve(e.target)}})},{threshold:.25});
-  R.querySelectorAll('.rv,.end').forEach(function(el){io.observe(el)});
+  R.querySelectorAll('.rv,.end').forEach(function(el){io.observe(el)});}
   // JAM: busur matahari, gambar berganti silang, lebar huruf jam mengikuti tinggi matahari
   var J=[['06:30','Sunrise'],['10:00','Late Morning'],['17:30','Golden Hour'],['19:30','Blue Hour Maghrib']],imgs=R.querySelectorAll('#ara-sunview img'),inp=R.querySelector('#ara-sun'),dot=R.querySelector('#ara-sundot'),clk=R.querySelector('#ara-clock'),cl=R.querySelector('#ara-clockl');
   function sun(v){var i=Math.floor(Math.min(2.999,v)),f=v-i;imgs.forEach(function(im,k){im.style.opacity=k===i?1-f:(k===i+1?f:0)});
