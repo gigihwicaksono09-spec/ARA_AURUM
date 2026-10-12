@@ -1,5 +1,5 @@
 {
-  "configVersion": 18,
+  "configVersion": 19,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.8.0",
+    "id": "v4.9.0",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.8.0 — baru: PANORAMA 360. Di SketchUp klik Potret 360 (plugin ARA Scene 1.4.3, dipasang otomatis): pilih tempat simpan, lalu jadi JPEG 360 siap pakai dan langsung masuk panggung ARA dengan Mode 360 (tombol 360 hijau). Atur preset, cahaya, jam, cuaca, notasi seperti biasa, GENERATE — sambungan kiri-kanan ditambal otomatis, putar di ARA atau Ekspor ke browser untuk klien (satu berkas, tanpa internet). Studio: hapus banyak gambar sekaligus. Edisi kantor: memilih folder DESIGN kini membuka daftar proyek (perbaikan). Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.8.0 — new: PANORAMA 360. In SketchUp click 360 Capture (ARA Scene plugin 1.4.3, installed automatically): choose where to save, get a ready-to-use 360 JPEG, and it lands on the ARA stage in 360 mode (green 360 button). Set preset, light, time, weather and notes as usual, GENERATE — the left/right seam is patched automatically; spin it in ARA or Export to browser for your client (one file, no internet needed). Studio: delete many images at once. Office edition: choosing the DESIGN folder now opens the project list (fix). Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.9.0 — baru: TUR VIRTUAL 360 — beberapa ruang 360 dalam satu berkas, pindah ruang lewat panah & denah; VIDEO PUTAR 360 (9:16 / 16:9) untuk Reels & Status WA; tampilan klien lebih rapi + bisa dibuka di iPhone. MESIN CHATGPT (pilihan): di dekat GENERATE pilih Gemini atau ChatGPT — memakai login ChatGPT kamu sendiri, Gemini tetap bawaan. Hasil Gemini 1K kini diulang otomatis (maks 2x). Notasi kini menang bila berbeda dengan Brief (hasil lebih sering 2K & material sesuai notasi). Pindah akun Gemini di dalam ARA kini berfungsi & diingat. Plugin ARA Scene 1.4.4: perbaikan potret 360 gelap + dukungan SketchUp 2025. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.9.0 — new: 360 VIRTUAL TOUR — several 360 rooms in one file, move between rooms with arrows and a floor plan; 360 SPIN VIDEO (9:16 / 16:9) for Reels and WhatsApp Status; a cleaner client view that also opens on iPhone. CHATGPT ENGINE (optional): next to GENERATE choose Gemini or ChatGPT — uses your own ChatGPT login, Gemini stays the default. 1K Gemini results are now retried automatically (up to 2x). Marks now win when they differ from the Brief (more 2K results, materials as marked). Switching Gemini accounts inside ARA now works and is remembered. ARA Scene plugin 1.4.4: fixes dark 360 captures and supports SketchUp 2025. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
