@@ -1,5 +1,5 @@
 {
-  "configVersion": 19,
+  "configVersion": 20,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.9.0",
+    "id": "v4.9.1",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.9.0 — baru: TUR VIRTUAL 360 — beberapa ruang 360 dalam satu berkas, pindah ruang lewat panah & denah; VIDEO PUTAR 360 (9:16 / 16:9) untuk Reels & Status WA; tampilan klien lebih rapi + bisa dibuka di iPhone. MESIN CHATGPT (pilihan): di dekat GENERATE pilih Gemini atau ChatGPT — memakai login ChatGPT kamu sendiri, Gemini tetap bawaan. Hasil Gemini 1K kini diulang otomatis (maks 2x). Notasi kini menang bila berbeda dengan Brief (hasil lebih sering 2K & material sesuai notasi). Pindah akun Gemini di dalam ARA kini berfungsi & diingat. Plugin ARA Scene 1.4.4: perbaikan potret 360 gelap + dukungan SketchUp 2025. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.9.0 — new: 360 VIRTUAL TOUR — several 360 rooms in one file, move between rooms with arrows and a floor plan; 360 SPIN VIDEO (9:16 / 16:9) for Reels and WhatsApp Status; a cleaner client view that also opens on iPhone. CHATGPT ENGINE (optional): next to GENERATE choose Gemini or ChatGPT — uses your own ChatGPT login, Gemini stays the default. 1K Gemini results are now retried automatically (up to 2x). Marks now win when they differ from the Brief (more 2K results, materials as marked). Switching Gemini accounts inside ARA now works and is remembered. ARA Scene plugin 1.4.4: fixes dark 360 captures and supports SketchUp 2025. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.9.1 — Gemini kini punya pilihan model (Flash-Lite / Flash / Pro). ARA otomatis memilih Pro + tingkat Rendah sebelum tiap kiriman — dari uji nyata paling setia pada desain; bila jatah Pro habis, ARA memakai Flash, dan memberi tahu bila Gemini terpaksa turun ke Flash-Lite. Termasuk semua isi 4.9.0: Tur Virtual 360, Video Putar 360, mesin ChatGPT (pilihan), pindah akun Gemini. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.9.1 — Gemini now has a model picker (Flash-Lite / Flash / Pro). ARA automatically picks Pro + Low thinking before every send — the most faithful to your design in real tests; if Pro quota runs out it uses Flash, and it tells you when Gemini falls back to Flash-Lite. Includes everything from 4.9.0: 360 Virtual Tour, 360 Spin Video, optional ChatGPT engine, Gemini account switching. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
