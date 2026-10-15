@@ -1,5 +1,5 @@
 {
-  "configVersion": 21,
+  "configVersion": 22,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.9.2",
+    "id": "v4.9.3",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.9.2 — capture SketchUp dari layar lebar tidak lagi dianggap foto 360 (dulu kamera bisa pindah dan muncul gedung tambahan); hasil berkas 1K tidak lagi dirender ulang otomatis, ARA bertanya dulu; autopilot tidak lagi mengirim dua kali. Baru: mesin generate ketiga Meta AI (gratis, login akun Meta sendiri di tab Render) dan, di edisi Office, preset proyek yang terlihat di semua PC/divisi. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.9.2 — SketchUp captures from wide screens are no longer treated as 360 photos (the camera could move and extra buildings appeared); 1K results are no longer re-rendered automatically, ARA asks first; autopilot no longer sends twice. New: a third generate engine, Meta AI (free, sign in with your own Meta account in the Render tab), and in the Office edition, project presets visible on every PC/division. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.9.3 — halaman Gemini tidak lagi muncul di samping kanan sesudah Autopilot dijalankan beberapa kali. Meta AI: GENERATE berturut-turut tidak lagi bisa mengambil gambar hasil sebelumnya. ARA menyesuaikan perubahan terbaru Gemini dari Google. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.9.3 — the Gemini page no longer appears on the right side after running Autopilot several times. Meta AI: consecutive GENERATEs can no longer pick up the previous result image. ARA adapts to Google's latest Gemini change. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
