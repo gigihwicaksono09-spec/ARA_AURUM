@@ -1,5 +1,5 @@
 {
-  "configVersion": 24,
+  "configVersion": 25,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.9.5",
+    "id": "v4.9.6",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.9.5 — Lampu SketchUp lebih ringan: Lampu Bidang tampil biasa saat bekerja dan menyala penuh otomatis saat gambar ditangkap (Ekspor, Potret 360, kirim ke ARA). Tiap klik langsung jadi lampu. Lampu Indirek di garis tegak tidak lagi gagal. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.9.5 — lighter SketchUp lights: Glowing Surface lights look normal while you work and light up automatically when an image is captured (Export, 360 Capture, send to ARA). Every click makes a light right away. Indirect Light on vertical lines no longer fails. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.9.6 — Lampu SketchUp lebih ringan: Lampu Bidang menyala otomatis saat gambar ditangkap (Ekspor, Potret 360, kirim ke ARA), tiap klik langsung jadi lampu, dan model lama berisi Lampu Bidang ikut jadi ringan saat dibuka. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.9.6 — lighter SketchUp lights: Glowing Surface lights light up automatically when an image is captured (Export, 360 Capture, send to ARA), every click makes a light right away, and older models with Glowing Surface lights become light again when opened. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
