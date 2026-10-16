@@ -1,5 +1,5 @@
 {
-  "configVersion": 23,
+  "configVersion": 24,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.9.4",
+    "id": "v4.9.5",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.9.4 — toolbar baru \"ARA Lampu\" di SketchUp: Lampu Indirek, Downlight, dan Lampu Bidang yang tampak langsung di viewport dan dibaca Gemini saat render. Edisi kantor: ARA dibuka tanpa proyek (tombol PROYEK merah) dan bertanya sebelum GENERATE bila proyek belum dipilih — render tak lagi masuk proyek yang salah. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.9.4 — new \"ARA Lampu\" toolbar in SketchUp: Indirect Light, Downlight and Glowing Surface lights visible right in the viewport and read by Gemini when rendering. Office edition: ARA starts with no project (PROJECT button red) and asks before GENERATE when no project is selected — renders no longer land in the wrong project. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.9.5 — Lampu SketchUp lebih ringan: Lampu Bidang tampil biasa saat bekerja dan menyala penuh otomatis saat gambar ditangkap (Ekspor, Potret 360, kirim ke ARA). Tiap klik langsung jadi lampu. Lampu Indirek di garis tegak tidak lagi gagal. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.9.5 — lighter SketchUp lights: Glowing Surface lights look normal while you work and light up automatically when an image is captured (Export, 360 Capture, send to ARA). Every click makes a light right away. Indirect Light on vertical lines no longer fails. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
