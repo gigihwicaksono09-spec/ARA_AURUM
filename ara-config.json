@@ -1,5 +1,5 @@
 {
-  "configVersion": 22,
+  "configVersion": 23,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.9.3",
+    "id": "v4.9.4",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.9.3 — halaman Gemini tidak lagi muncul di samping kanan sesudah Autopilot dijalankan beberapa kali. Meta AI: GENERATE berturut-turut tidak lagi bisa mengambil gambar hasil sebelumnya. ARA menyesuaikan perubahan terbaru Gemini dari Google. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.9.3 — the Gemini page no longer appears on the right side after running Autopilot several times. Meta AI: consecutive GENERATEs can no longer pick up the previous result image. ARA adapts to Google's latest Gemini change. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.9.4 — toolbar baru \"ARA Lampu\" di SketchUp: Lampu Indirek, Downlight, dan Lampu Bidang yang tampak langsung di viewport dan dibaca Gemini saat render. Edisi kantor: ARA dibuka tanpa proyek (tombol PROYEK merah) dan bertanya sebelum GENERATE bila proyek belum dipilih — render tak lagi masuk proyek yang salah. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.9.4 — new \"ARA Lampu\" toolbar in SketchUp: Indirect Light, Downlight and Glowing Surface lights visible right in the viewport and read by Gemini when rendering. Office edition: ARA starts with no project (PROJECT button red) and asks before GENERATE when no project is selected — renders no longer land in the wrong project. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
