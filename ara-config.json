@@ -1,5 +1,5 @@
 {
-  "configVersion": 26,
+  "configVersion": 27,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.10.0",
+    "id": "v4.10.1",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.0 — Gambar Kerja lemari siap produksi langsung dari SketchUp (template, notasi gaya AutoCAD, potongan B-B & denah, tampak per bidang, daftar potong, PDF/DXF/DWG), ARA Kuas untuk menandai pintu/laci/material di model, dan Bagikan Tur 360 tanpa akun. Plugin SketchUp kini memakai lisensi ARA. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.10.0 — production-ready cabinet Shop Drawings straight from SketchUp (templates, AutoCAD-style annotation, B-B & plan sections, per-plane elevations, cutting list, PDF/DXF/DWG), ARA Brush to mark doors/drawers/materials in the model, and account-free 360 Tour sharing. SketchUp plugins now use your ARA licence. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.10.1 — Link Bagikan Tur kini tampil sempurna di semua perangkat (link yang dibuat dengan 4.10.0 perlu dibuat ulang). Baru di Sistem → 360: logo perusahaan di kartu judul, warna aksen, putar otomatis, dan daftar \"Link saya\" untuk menyalin atau menghapus link. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.10.1 — Share Tour links now display perfectly on every device (links made with 4.10.0 need to be created again). New in System → 360: company logo on the title card, accent colour, auto-rotate, and a \"My links\" list to copy or delete links. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
