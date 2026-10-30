@@ -1,5 +1,5 @@
 {
-  "configVersion": 29,
+  "configVersion": 30,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.10.3",
+    "id": "v4.10.4",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.3 — Plugin SketchUp 1.11.1: alat baru ARA Clean (periksa & bersihkan model berat: tekstur kebesaran, grup kembar, definisi tak terpakai, garis liar — satu kali Undo), Gambar Kerja dengan daftar perabot untuk dicentang (termasuk group tanpa nama), pintu kabinet yang tidak sejajar kini terbaca, notasi & tebal garis gaya kantor, DXF dengan ukuran asli, dan Export menanyakan folder simpan. Plugin diperbarui otomatis saat ARA dibuka. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.10.3 — SketchUp plugin 1.11.1: new ARA Clean tool (check & clean heavy models: oversized textures, duplicate groups, unused definitions, stray edges — one Undo), Shop Drawings with a tickable furniture list (unnamed groups included), misaligned cabinet doors now detected, office-style notation & line weights, DXF with real dimensions, and Export asks where to save. The plugin updates automatically when ARA opens. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.10.4 — Plugin SketchUp 1.12.0: alat baru ARA Line (weld garis pintar 1 klik, sambung celah, sederhanakan & haluskan kurva) dan ARA Face (tempel model ke bidang datar/lengkung/bola tanpa garis bantu, kisi & sirip, fluted, ubin & parket termasuk bata dan batu alam acak, perforasi yang lubangnya bisa membentuk logo/foto, gradasi parametrik, Edit Titik, Haluskan, Hitung jumlah ubin/bilah/lubang + dus, dan Bentangkan ke lembar datar + SVG). Plugin diperbarui otomatis saat ARA dibuka. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.10.4 — SketchUp plugin 1.12.0: new ARA Line tool (one-click smart weld, close gaps, simplify & smooth curves) and ARA Face (apply a model to flat, curved or spherical faces without guide lines, slats & fins, fluted, tiles & parquet incl. brick and random natural stone, perforation whose holes can form a logo/photo, parametric gradients, Edit Vertices, Subdivide, Count tiles/slats/holes + boxes, and Unroll to a flat sheet + SVG). The plugin updates automatically when ARA opens. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
