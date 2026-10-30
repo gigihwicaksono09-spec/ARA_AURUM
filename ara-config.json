@@ -1,5 +1,5 @@
 {
-  "configVersion": 30,
+  "configVersion": 31,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.10.4",
+    "id": "v4.10.5",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.4 — Plugin SketchUp 1.12.0: alat baru ARA Line (weld garis pintar 1 klik, sambung celah, sederhanakan & haluskan kurva) dan ARA Face (tempel model ke bidang datar/lengkung/bola tanpa garis bantu, kisi & sirip, fluted, ubin & parket termasuk bata dan batu alam acak, perforasi yang lubangnya bisa membentuk logo/foto, gradasi parametrik, Edit Titik, Haluskan, Hitung jumlah ubin/bilah/lubang + dus, dan Bentangkan ke lembar datar + SVG). Plugin diperbarui otomatis saat ARA dibuka. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.10.4 — SketchUp plugin 1.12.0: new ARA Line tool (one-click smart weld, close gaps, simplify & smooth curves) and ARA Face (apply a model to flat, curved or spherical faces without guide lines, slats & fins, fluted, tiles & parquet incl. brick and random natural stone, perforation whose holes can form a logo/photo, parametric gradients, Edit Vertices, Subdivide, Count tiles/slats/holes + boxes, and Unroll to a flat sheet + SVG). The plugin updates automatically when ARA opens. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.10.5 — Plugin SketchUp 1.12.1 lebih gampang dipakai: ARA Face (Kisi & Sirip, Ubin & Parket, Perforasi) cukup klik tombol lalu klik dinding/lantai (boleh di dalam group) — hasil langsung jadi dengan jendela pengaturan (ukuran mm, contoh siap pakai seperti granit 60×60 & parket herringbone, gradasi, material ubin & nat), klik hasil lama untuk menyunting. ARA Line & Edit Titik punya jendela panduan langkah demi langkah, Copy Path tidak perlu memilih objek dulu, dan setelan terakhir kini tersimpan. Plugin diperbarui otomatis saat ARA dibuka. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
+    "msg_en": "ARA 4.10.5 — SketchUp plugin 1.12.1 is easier to use: ARA Face (Slats & Fins, Tiles & Parquet, Perforation) — click the button, then click a wall/floor (inside groups too) — the result appears at once with a settings window (sizes in mm, presets such as granite 60×60 and herringbone parquet, gradients, tile & grout materials); click an existing result to edit. ARA Line & Edit Vertices get a step-by-step guide window, Copy Path no longer needs a selection first, and your last settings are now remembered. The plugin updates automatically when ARA opens. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
   }
 }
