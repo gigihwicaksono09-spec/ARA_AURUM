@@ -1,5 +1,5 @@
 {
-  "configVersion": 31,
+  "configVersion": 32,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.10.5",
+    "id": "v4.10.6",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.5 — Plugin SketchUp 1.12.1 lebih gampang dipakai: ARA Face (Kisi & Sirip, Ubin & Parket, Perforasi) cukup klik tombol lalu klik dinding/lantai (boleh di dalam group) — hasil langsung jadi dengan jendela pengaturan (ukuran mm, contoh siap pakai seperti granit 60×60 & parket herringbone, gradasi, material ubin & nat), klik hasil lama untuk menyunting. ARA Line & Edit Titik punya jendela panduan langkah demi langkah, Copy Path tidak perlu memilih objek dulu, dan setelan terakhir kini tersimpan. Plugin diperbarui otomatis saat ARA dibuka. Mohon perbarui: unduh di github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway).",
-    "msg_en": "ARA 4.10.5 — SketchUp plugin 1.12.1 is easier to use: ARA Face (Slats & Fins, Tiles & Parquet, Perforation) — click the button, then click a wall/floor (inside groups too) — the result appears at once with a settings window (sizes in mm, presets such as granite 60×60 and herringbone parquet, gradients, tile & grout materials); click an existing result to edit. ARA Line & Edit Vertices get a step-by-step guide window, Copy Path no longer needs a selection first, and your last settings are now remembered. The plugin updates automatically when ARA opens. Please update: download at github.com/gigihwicaksono09-spec/ARA_AURUM/releases (SmartScreen: More info → Run anyway)."
+    "msg_id": "ARA 4.10.6 — Plugin SketchUp 1.13.0 punya ARA Material: galeri material per kelompok lalu merek, cat rapi di bidang lengkung dan panel, atur ukuran, putar, dan geser langsung di bidang. Material pribadi aman saat update. Plugin diperbarui otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.6 — SketchUp plugin 1.13.0 adds ARA Material: a gallery by group and brand, clean painting on curved faces and panels, with size, rotation and position adjusted directly on the face. Your personal materials stay safe across updates. The plugin updates automatically when the app opens."
   }
 }
