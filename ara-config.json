@@ -1,5 +1,5 @@
 {
-  "configVersion": 34,
+  "configVersion": 35,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.10.8",
+    "id": "v4.10.9",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.8 — Plugin SketchUp lebih enak dipakai: lampu & Copy Path kini ikut masuk ke group, tombol tanpa pilihan langsung minta klik objeknya (tidak ada lagi kotak “Pilih dulu”), tiap alat punya kursor sendiri, dan Ctrl+Z tidak lagi mengeluarkan dari alat. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.8 — The SketchUp plugins are easier to use: lights and Copy Path now stay inside the group, buttons with nothing selected simply ask you to click the object (no more “select first” boxes), every tool has its own cursor, and Ctrl+Z no longer drops you out of the tool. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.9 — Plugin SketchUp makin mudah: salah langkah kini memunculkan kartu cara pakai di layar, Garis sejajar bisa diubah sesudah diklik, dan Kisi/Ubin/Perforasi tampil sebagai garis pratinjau dulu sehingga mengubah angka jauh lebih cepat. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.9 — The SketchUp plugins got easier: a wrong step now shows a how-to card on screen, parallel lines can still be changed after the click, and Slats/Tiles/Perforation show a preview outline first, so changing numbers is much faster. The update installs automatically when the app opens."
   }
 }
