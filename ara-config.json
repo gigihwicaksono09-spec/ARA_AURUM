@@ -1,5 +1,5 @@
 {
-  "configVersion": 35,
+  "configVersion": 36,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.10.9",
+    "id": "v4.10.10",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.9 — Plugin SketchUp makin mudah: salah langkah kini memunculkan kartu cara pakai di layar, Garis sejajar bisa diubah sesudah diklik, dan Kisi/Ubin/Perforasi tampil sebagai garis pratinjau dulu sehingga mengubah angka jauh lebih cepat. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.9 — The SketchUp plugins got easier: a wrong step now shows a how-to card on screen, parallel lines can still be changed after the click, and Slats/Tiles/Perforation show a preview outline first, so changing numbers is much faster. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.10 — ARA Material kini membawa Pustaka ARA: 398 tekstur siap pakai, termasuk kelompok baru Lansekap (rumput, tanah dan kerikil, paving, aspal) serta Fasad dan Atap. Gambar acuan juga kembali bisa dilampirkan di tampilan baru ChatGPT. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.10 — ARA Material now ships with the ARA Library: 398 ready-to-use textures, including new Landscape (grass, soil and gravel, paving, asphalt) and Facade and Roof groups. Reference images attach again in the new ChatGPT layout. The update installs automatically when the app opens."
   }
 }
