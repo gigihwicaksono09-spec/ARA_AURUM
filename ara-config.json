@@ -1,5 +1,5 @@
 {
-  "configVersion": 36,
+  "configVersion": 37,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,10 +63,10 @@
     }
   },
   "announcement": {
-    "id": "v4.10.10",
+    "id": "v4.10.11",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.10 — ARA Material kini membawa Pustaka ARA: 398 tekstur siap pakai, termasuk kelompok baru Lansekap (rumput, tanah dan kerikil, paving, aspal) serta Fasad dan Atap. Gambar acuan juga kembali bisa dilampirkan di tampilan baru ChatGPT. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.10 — ARA Material now ships with the ARA Library: 398 ready-to-use textures, including new Landscape (grass, soil and gravel, paving, asphalt) and Facade and Roof groups. Reference images attach again in the new ChatGPT layout. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.11 — GENERATE ke Gemini kembali mengirim dan mengambil hasil. Baru: mesin Flow (hasil 2K), dan di Studio > Retouch ada Perspektif (Otomatis meluruskan garis tegak bangunan) serta Titik kontrol. Pratinjau Studio kini tajam. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.11 — GENERATE to Gemini sends and captures results again. New: the Flow engine (2K results), and in Studio > Retouch, Perspective (Auto straightens building verticals) and Control points. The Studio preview is now sharp. The update installs automatically when the app opens."
   }
 }
