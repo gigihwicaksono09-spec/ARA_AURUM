@@ -1,5 +1,5 @@
 {
-  "configVersion": 39,
+  "configVersion": 40,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,11 +63,11 @@
     }
   },
   "announcement": {
-    "id": "v4.10.12",
+    "id": "v4.10.13",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.12 — tombol LIHAT (sebelah SIMPAN) membuka galeri preset bergambar: 24 preset foto, 8 Visualization Mode dan 4 Analisis Kinerja; klik gambar = preset terpasang. Gemini kini memakai model 4 Hydrogen lebih dulu, Notasi ikut di mode Eksterior, dan Mode Cerita mudah dimatikan dari ubin GENERATE. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.12 — the BROWSE button (next to SAVE) opens a picture gallery of presets: 24 photo presets, 8 Visualization Modes and 4 Performance Analyses; click a picture to apply it. Gemini now uses the 4 Hydrogen model first, Notes also work in Exterior mode, and Story Mode is easy to switch off from the GENERATE tile. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.13 — plugin AutoCAD ARA Juru 1.5.0: segitiga lebar pintu/jendela kini satu sisi (ujung lain diam), model pintu/jendela bisa diganti sesudah terpasang (pilih lalu klik model di panel), dan panel lebih ringkas tanpa salah ganti jenis saat menggulir. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.13 — AutoCAD plugin ARA Juru 1.5.0: door/window width triangles are now one-sided (the other end stays put), a placed door/window model can be changed (select it, then click a model in the panel), and the panel is more compact with no accidental type changes while scrolling. The update installs automatically when the app opens."
   },
   "geminiMode": {
     "aktif": true,
