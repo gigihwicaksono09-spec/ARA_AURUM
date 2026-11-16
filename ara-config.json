@@ -1,5 +1,5 @@
 {
-  "configVersion": 40,
+  "configVersion": 41,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,11 +63,11 @@
     }
   },
   "announcement": {
-    "id": "v4.10.13",
+    "id": "v4.10.14",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.13 — plugin AutoCAD ARA Juru 1.5.0: segitiga lebar pintu/jendela kini satu sisi (ujung lain diam), model pintu/jendela bisa diganti sesudah terpasang (pilih lalu klik model di panel), dan panel lebih ringkas tanpa salah ganti jenis saat menggulir. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.13 — AutoCAD plugin ARA Juru 1.5.0: door/window width triangles are now one-sided (the other end stays put), a placed door/window model can be changed (select it, then click a model in the panel), and the panel is more compact with no accidental type changes while scrolling. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.14 — plugin AutoCAD ARA Juru 1.5.1: perintah Isi kamar mandi (ISIKM) kini benar-benar jalan (di 4.10.13 belum dikenali AutoCAD). Klik di dalam kamar mandi: kloset, wastafel, dan shower atau bathtub ditata otomatis; Tukar memberi susunan yang benar-benar berbeda, dan ruang lega mendapat shower/bathtub terbesar yang muat. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.14 — AutoCAD plugin ARA Juru 1.5.1: the Fill bathroom command (ISIKM) now actually works (AutoCAD did not recognise it in 4.10.13). Click inside a bathroom: toilet, basin and shower or bathtub are laid out automatically; Swap gives genuinely different layouts, and roomy bathrooms get the largest shower/bathtub that fits. The update installs automatically when the app opens."
   },
   "geminiMode": {
     "aktif": true,
