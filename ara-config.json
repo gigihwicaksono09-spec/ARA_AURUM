@@ -1,5 +1,5 @@
 {
-  "configVersion": 41,
+  "configVersion": 42,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,11 +63,11 @@
     }
   },
   "announcement": {
-    "id": "v4.10.14",
+    "id": "v4.10.15",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.14 — plugin AutoCAD ARA Juru 1.5.1: perintah Isi kamar mandi (ISIKM) kini benar-benar jalan (di 4.10.13 belum dikenali AutoCAD). Klik di dalam kamar mandi: kloset, wastafel, dan shower atau bathtub ditata otomatis; Tukar memberi susunan yang benar-benar berbeda, dan ruang lega mendapat shower/bathtub terbesar yang muat. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.14 — AutoCAD plugin ARA Juru 1.5.1: the Fill bathroom command (ISIKM) now actually works (AutoCAD did not recognise it in 4.10.13). Click inside a bathroom: toilet, basin and shower or bathtub are laid out automatically; Swap gives genuinely different layouts, and roomy bathrooms get the largest shower/bathtub that fits. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.15 — Mode Cerita kini bisa memilih Penghuni (siapa yang ada di foto) dan Properti kecil, membuat seri foto (Set Foto 4 atau Satu Hari: pagi sampai malam), dan opsi caption siap unggah. Render kini tampil sebagai bangunan baru yang bersih. Gambar resolusi penuh tidak lagi terputus di detik terakhir. Plugin AutoCAD ARA Juru 1.6.0: Samakan Satuan, Plot Massal ke satu PDF, dan Galeri Blok; kini untuk AutoCAD 2018 sampai 2027. Plugin SketchUp: Lampu Indirek kini bisa diarahkan ke kiri, kanan, depan, belakang, atau derajat bebas. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.15 — Story Mode can now pick Occupants (who is in the photo) and small Props, make photo series (Photo Set 4 or One Day: morning to night), and optionally write a ready-to-post caption. Renders now show the building as new and clean. Full-resolution images no longer get cut off at the last second. AutoCAD plugin ARA Juru 1.6.0: Match Units, Batch Plot to one PDF, and Block Gallery; now for AutoCAD 2018 to 2027. SketchUp plugin: Indirect Light can now point left, right, front, back, or any angle. The update installs automatically when the app opens."
   },
   "geminiMode": {
     "aktif": true,
