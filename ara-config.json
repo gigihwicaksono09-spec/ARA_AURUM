@@ -1,5 +1,5 @@
 {
-  "configVersion": 42,
+  "configVersion": 43,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,11 +63,11 @@
     }
   },
   "announcement": {
-    "id": "v4.10.15",
+    "id": "v4.10.16",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.15 — Mode Cerita kini bisa memilih Penghuni (siapa yang ada di foto) dan Properti kecil, membuat seri foto (Set Foto 4 atau Satu Hari: pagi sampai malam), dan opsi caption siap unggah. Render kini tampil sebagai bangunan baru yang bersih. Gambar resolusi penuh tidak lagi terputus di detik terakhir. Plugin AutoCAD ARA Juru 1.6.0: Samakan Satuan, Plot Massal ke satu PDF, dan Galeri Blok; kini untuk AutoCAD 2018 sampai 2027. Plugin SketchUp: Lampu Indirek kini bisa diarahkan ke kiri, kanan, depan, belakang, atau derajat bebas. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.15 — Story Mode can now pick Occupants (who is in the photo) and small Props, make photo series (Photo Set 4 or One Day: morning to night), and optionally write a ready-to-post caption. Renders now show the building as new and clean. Full-resolution images no longer get cut off at the last second. AutoCAD plugin ARA Juru 1.6.0: Match Units, Batch Plot to one PDF, and Block Gallery; now for AutoCAD 2018 to 2027. SketchUp plugin: Indirect Light can now point left, right, front, back, or any angle. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.16 — Mode Cerita: Set Foto 4, Satu Hari, dan 3 Variasi kini dibuat di satu percakapan Gemini, jadi wajah, busana, dan ruangan tetap sama dari foto ke foto. Busana bisa mengikuti tema warna pilihanmu. Panel Mode Cerita tidak lagi bergeser saat diklik. Notasi otomatis tidak lagi memasang area yang terlalu luas atau bertumpuk, dan ada tombol Hapus Otomatis untuk membersihkannya sekaligus. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.16 — Story Mode: Photo Set 4, One Day and 3 Variations are now made in one Gemini conversation, so the face, outfit and room stay the same from photo to photo. Outfits can follow a colour theme you pick. The Story Mode panel no longer jumps when clicked. Auto notation no longer places areas that are too large or overlapping, and a Clear Auto button removes them all at once. The update installs automatically when the app opens."
   },
   "geminiMode": {
     "aktif": true,
