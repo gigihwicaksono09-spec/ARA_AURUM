@@ -1,5 +1,5 @@
 {
-  "configVersion": 43,
+  "configVersion": 44,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,11 +63,11 @@
     }
   },
   "announcement": {
-    "id": "v4.10.16",
+    "id": "v4.10.17",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.16 — Mode Cerita: Set Foto 4, Satu Hari, dan 3 Variasi kini dibuat di satu percakapan Gemini, jadi wajah, busana, dan ruangan tetap sama dari foto ke foto. Busana bisa mengikuti tema warna pilihanmu. Panel Mode Cerita tidak lagi bergeser saat diklik. Notasi otomatis tidak lagi memasang area yang terlalu luas atau bertumpuk, dan ada tombol Hapus Otomatis untuk membersihkannya sekaligus. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.16 — Story Mode: Photo Set 4, One Day and 3 Variations are now made in one Gemini conversation, so the face, outfit and room stay the same from photo to photo. Outfits can follow a colour theme you pick. The Story Mode panel no longer jumps when clicked. Auto notation no longer places areas that are too large or overlapping, and a Clear Auto button removes them all at once. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.17 — Kirim Data dari ARA Scene: scene dan material SketchUp langsung masuk ke jendela Data Scene di ARA dengan area dan bahan sudah terisi, tinggal periksa lalu GENERATE. Tekstur SketchUp yang tampak bisa jadi gambar acuan bahan. Panel ARA Scene tampil baru dan lebih ringkas. Ada lonceng pembaruan di ARA, ARA Scene, dan Juru Gambar. Juru Gambar (AutoCAD 2025–2027): Plot massal menebak kop sendiri dan menggabung semua lembar jadi satu PDF. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.17 — Send Data from ARA Scene: SketchUp scenes and materials go straight into the Scene Data window in ARA with areas and materials already filled in, so you just check and GENERATE. Visible SketchUp textures can be used as material reference images. The ARA Scene panel has a new, more compact look. An update bell now appears in ARA, ARA Scene and Juru Gambar. Juru Gambar (AutoCAD 2025–2027): batch plot finds title blocks by itself and joins all sheets into one PDF. The update installs automatically when the app opens."
   },
   "geminiMode": {
     "aktif": true,
