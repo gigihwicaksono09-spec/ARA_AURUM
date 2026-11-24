@@ -3,8 +3,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap">
 <style>
-@font-face{font-family:"Ara Geist";font-weight:100 900;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/fonts/geist-latin.woff2") format("woff2")}
-@font-face{font-family:"Ara Mono";font-weight:100 900;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/fonts/geist-mono-latin.woff2") format("woff2")}
+@font-face{font-family:"Ara Geist";font-weight:100 900;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/fonts/geist-latin.woff2") format("woff2")}
+@font-face{font-family:"Ara Mono";font-weight:100 900;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/fonts/geist-mono-latin.woff2") format("woff2")}
 /* Garis jadi foto (11/10): satu garis render hijau mengubah capture SketchUp → foto, huruf garis → huruf solid.
    Palet = warna asli ARA 4.9 (bingkai #121214, lime #D5F24B, slate #4F6490) + kertas beton untuk lembar "gambar kerja". */
 .ara5{--ink:#121214;--ink2:#1c1c20;--paper:#dcdbd5;--paper2:#cfcec7;--lime:#d5f24b;--slate:#4f6490;--fg:#ecebe6;--dim:#a9a8a1;--line:#ffffff1f;
@@ -159,133 +159,255 @@
   .ara5 .hero-title{bottom:200px}
 }
 @media (max-width:520px){.ara5 .rline span{display:none}.ara5 .honest{grid-template-columns:1fr}.ara5 .hero-copy .btn{flex:1;justify-content:center}}
+/* BAHASA (24/11) — tombol ID/EN; bawaan selalu ID (banyak HP Indonesia berbahasa Inggris) */
+.ara5 .nav-r{display:flex;align-items:center;gap:10px}
+.ara5 .lang{display:flex;border:1px solid #ffffff40;border-radius:999px;padding:3px}
+.ara5 .lang button{appearance:none;border:0;background:none;cursor:pointer;font:600 11px/1 var(--mono);letter-spacing:.12em;padding:9px 11px;border-radius:999px;color:var(--dim)}
+.ara5 .lang button[aria-pressed=true]{background:var(--fg);color:var(--ink)}
+/* YANG BARU */
+.ara5 .new{padding:clamp(64px,8vw,120px) var(--pad);background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ara5 .ver{display:inline-flex;gap:10px;align-items:center;color:var(--lime)}
+.ara5 .ver::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px #d5f24b33}
+.ara5 .news{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.ara5 .news a{display:flex;flex-direction:column;gap:10px;padding:24px 22px 26px;background:var(--ink2);transition:background .2s}
+.ara5 .news a:hover{background:#26262b}
+.ara5 .news .n{color:var(--lime)}
+.ara5 .news b{font:800 20px/1.1 var(--disp);font-stretch:110%;letter-spacing:-.01em}
+.ara5 .news span:last-child{color:var(--dim);font-size:14px;line-height:1.5}
+/* MULAI DARI GAMBAR */
+.ara5 .jadi{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(10px,1.4vw,18px)}
+.ara5 .jadi figure{display:flex;flex-direction:column;gap:10px}
+.ara5 .jadi img{aspect-ratio:16/10;width:100%;object-fit:cover;border-radius:4px;box-shadow:0 18px 40px #1212142e}
+.ara5 .jadi b{font:800 19px/1.1 var(--disp);font-stretch:110%;margin-top:4px}
+.ara5 .jadi span{font-size:14px;opacity:.72;line-height:1.45}
+.ara5 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;margin-top:clamp(28px,4vw,48px);border:2px solid var(--ink);background:var(--ink)}
+.ara5 .steps div{background:var(--paper);padding:22px 24px;font-size:15px}
+.ara5 .steps b{display:block;font:850 40px/1 var(--disp);font-stretch:125%;color:var(--slate);margin-bottom:8px}
+.ara5 .sec:not(.sheet) .ctrl .mono{color:var(--lime)}
+.ara5 .sec:not(.sheet) .ctrl .shot{box-shadow:none;border:1px solid var(--line)}
+/* PLUGIN */
+.ara5 .plug{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.6vw,22px)}
+.ara5 .p-duo{grid-column:span 12;display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--ink);border-radius:4px;overflow:hidden}
+.ara5 .p-duo div{position:relative;aspect-ratio:16/9;overflow:hidden}
+.ara5 .p-duo img{width:100%;height:100%;object-fit:cover}
+.ara5 .p-duo .tg{position:absolute;left:14px;top:12px;padding:8px 11px;border-radius:999px;background:#121214cc;color:var(--fg)}
+.ara5 .p-duo div:nth-child(2) .tg{background:var(--lime);color:var(--ink)}
+.ara5 .p-duo figcaption{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 28px;align-items:baseline;padding:18px 20px 20px;color:var(--fg)}
+.ara5 .p-duo figcaption b{font:800 22px/1 var(--disp);font-stretch:112%}
+.ara5 .p-duo figcaption span{color:#d6d5cf;font-size:14.5px;max-width:760px}
+.ara5 .p-gk,.ara5 .p-juru{grid-column:span 6;aspect-ratio:16/10}
+.ara5 .p-gk{background:#fff}
+.ara5 .p-gk img{object-fit:contain;padding:8px 8px 92px}
+.ara5 .tools{grid-column:span 12;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(16px,2.4vw,36px);margin-top:clamp(8px,1vw,14px)}
+.ara5 .tools div{padding:18px 0;border-top:1px solid #12121433;font-size:14.5px;opacity:.85}
+.ara5 .tools b{display:block;font:800 18px/1.15 var(--disp);font-stretch:110%;margin-bottom:4px}
+@media (max-width:900px){
+  .ara5 .news{grid-template-columns:1fr 1fr}
+  .ara5 .jadi{grid-template-columns:1fr 1fr}
+  .ara5 .steps{grid-template-columns:1fr}
+  .ara5 .p-gk,.ara5 .p-juru{grid-column:span 12}
+  .ara5 .tools{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){
+  .ara5 .news,.ara5 .tools{grid-template-columns:1fr}
+  .ara5 .p-duo{grid-template-columns:1fr}
+  .ara5 .p-gk img{padding:6px 6px 110px}
+  .ara5 .nav .btn{display:none}
+}
+.ara5 .p-gk .lab{background:var(--ink)}
+.ara5 .card .lab b{color:var(--fg)}
 @media (prefers-reduced-motion:reduce){.ara5 .rv{opacity:1;transform:none;transition:none}.ara5 *{transition:none!important}}
 </style>
 
-<div class="ara5 nojs" data-design="garis-jadi-foto-2026" id="ara-top">
+<div class="ara5 nojs" data-design="garis-jadi-foto-2026" data-versi="4.10" id="ara-top">
   <header class="nav">
-    <a class="logo" href="#ara-top"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/logo-aurum.svg" alt="">ARA AURUM</a>
-    <nav aria-label="Bagian halaman"><a href="#ara-bukti">Hasil</a><a href="#ara-kontrol">Kontrol</a><a href="#ara-jam">Jam</a><a href="#ara-set">Presentasi</a><a href="#ara-harga">Harga</a></nav>
-    <a class="btn btn-lime" href="https://github.com/gigihwicaksono09-spec/ARA_AURUM/releases/latest">Coba gratis <i>↓</i></a>
+    <a class="logo" href="#ara-top"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/logo-aurum.svg" alt="">ARA AURUM</a>
+    <nav aria-label="Bagian halaman"><a href="#ara-baru" data-en="New">Baru</a><a href="#ara-bukti" data-en="Results">Hasil</a><a href="#ara-plugin" data-en="Plugins">Plugin</a><a href="#ara-harga" data-en="Pricing">Harga</a><a href="#ara-faq">FAQ</a></nav>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Bahasa / Language"><button type="button" data-lang="id" aria-pressed="true">ID</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+      <a class="btn btn-lime" href="https://github.com/gigihwicaksono09-spec/ARA_AURUM/releases/latest" data-en="Try free <i>↓</i>">Coba gratis <i>↓</i></a>
+    </div>
   </header>
 
   <section class="hero" id="ara-hero" aria-label="Garis jadi foto">
     <div class="hero-stage">
-      <img class="hero-img" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/villa-av-render.webp" alt="Foto villa tropis hasil ARA saat golden hour">
-      <img class="hero-img hero-model" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/villa-av-model.webp" alt="Capture model SketchUp villa yang sama">
+      <img class="hero-img" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/villa-av-render.webp" alt="Foto villa tropis hasil ARA saat golden hour">
+      <img class="hero-img hero-model" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/villa-av-model.webp" alt="Capture model SketchUp villa yang sama">
       <div class="hero-shade"></div>
-      <div class="rline" aria-hidden="true"><span>↑ hasil ARA · seret garisnya</span><span>↓ model SketchUp</span></div>
-      <p class="hero-tag mono"><b>ARA V5 AURUM</b> · untuk arsitek &amp; desainer interior · proyek contoh</p>
-      <h1 class="hero-title disp"><span class="t t-out">Garis jadi<br><em>foto.</em></span><span class="t t-in" aria-hidden="true">Garis jadi<br><em>foto.</em></span></h1>
+      <div class="rline" aria-hidden="true"><span data-en="↑ ARA result · drag the line">↑ hasil ARA · seret garisnya</span><span data-en="↓ SketchUp model">↓ model SketchUp</span></div>
+      <p class="hero-tag mono" data-en="&lt;b&gt;ARA V5 AURUM 4.10&lt;/b&gt; · for architects &amp;amp; interior designers · sample project"><b>ARA V5 AURUM 4.10</b> · untuk arsitek &amp; desainer interior · proyek contoh</p>
+      <h1 class="hero-title disp"><span class="t t-out" data-en="Lines into&lt;br&gt;&lt;em&gt;photos.&lt;/em&gt;">Garis jadi<br><em>foto.</em></span><span class="t t-in" aria-hidden="true" data-en="Lines into&lt;br&gt;&lt;em&gt;photos.&lt;/em&gt;">Garis jadi<br><em>foto.</em></span></h1>
       <div class="hero-copy">
-        <p>Tangkap model SketchUp-mu, tekan GENERATE. ARA memotretnya jadi foto arsitektur lewat akun Gemini gratismu. Tanpa render engine, tanpa langganan.</p>
-        <div class="cta"><a class="btn btn-lime" href="https://github.com/gigihwicaksono09-spec/ARA_AURUM/releases/latest">Coba gratis 7 prompt <i>↓</i></a><a class="btn btn-ghost" href="https://lynk.id/ara.workflow/z3nkgx5mv6kd/checkout">Beli · Rp399.000 <i>→</i></a></div>
+        <p data-en="Capture your SketchUp model, press GENERATE. ARA photographs it into an architectural photo through your own free Gemini account. SketchUp and AutoCAD plugins now install with it. No render engine, no subscription.">Tangkap model SketchUp-mu, tekan GENERATE. ARA memotretnya jadi foto arsitektur lewat akun Gemini gratismu. Kini plugin SketchUp dan AutoCAD ikut terpasang. Tanpa render engine, tanpa langganan.</p>
+        <div class="cta"><a class="btn btn-lime" href="https://github.com/gigihwicaksono09-spec/ARA_AURUM/releases/latest" data-en="Try 7 prompts free <i>↓</i>">Coba gratis 7 prompt <i>↓</i></a><a class="btn btn-ghost" href="https://lynk.id/ara.workflow/z3nkgx5mv6kd/checkout" data-en="Buy · Rp399,000 <i>→</i>">Beli · Rp399.000 <i>→</i></a></div>
       </div>
+    </div>
+  </section>
+
+  <section class="new" id="ara-baru">
+    <div class="head rv"><div><p class="kicker mono ver" data-en="November 2026 update">Pembaruan November 2026</p><h2 class="disp" data-en="What’s new in 4.10.">Yang baru di 4.10.</h2></div>
+      <p data-en="ARA 4.10.17 · ARA Scene 1.18 · ARA Juru 1.7. Every update is free for licence owners, and the bell inside ARA tells you when one lands.">ARA 4.10.17 · ARA Scene 1.18 · ARA Juru 1.7. Semua pembaruan gratis untuk pemilik lisensi, dan lonceng di dalam ARA memberi tahu saat ada versi baru.</p></div>
+    <div class="news rv">
+      <a href="#ara-plugin"><span class="n mono">01</span><b data-en="SketchUp plugins included">Plugin SketchUp ikut</b><span data-en="ARA Scene, Lighting, Shop Drawing, Face, Material. Installed for you into SketchUp 2019–2026.">ARA Scene, Lampu, Gambar Kerja, Face, Material. Dipasang otomatis ke SketchUp 2019–2026.</span></a>
+      <a href="#ara-plugin"><span class="n mono">02</span><b data-en="ARA Juru for AutoCAD">ARA Juru untuk AutoCAD</b><span data-en="Fast floor plans: walls, doors, windows, columns, auto-filled bathrooms, room areas. AutoCAD 2018–2027.">Denah cepat: dinding, pintu, jendela, kolom, isi kamar mandi otomatis, luas ruang. AutoCAD 2018–2027.</span></a>
+      <a href="#ara-kontrol"><span class="n mono">03</span><b data-en="SketchUp materials become Notation">Material SketchUp jadi Notasi</b><span data-en="Send Scene Data: every material in your model arrives as a Notation area. No re-marking.">Kirim Data Scene: tiap material di model langsung jadi area Notasi. Tak perlu menandai ulang.</span></a>
+      <a href="#ara-mulai"><span class="n mono">04</span><b data-en="Picture preset gallery">Galeri preset bergambar</b><span data-en="Start from an example result instead of a list of terms.">Mulai dari contoh hasil, bukan dari daftar istilah.</span></a>
+      <a href="#ara-set"><span class="n mono">05</span><b data-en="Story Mode, fuller">Mode Cerita lebih lengkap</b><span data-en="Occupants, props, captions, a set of 4 photos, and one day from morning to night.">Penghuni, properti, caption, set 4 foto, dan satu hari dari pagi sampai malam.</span></a>
+      <a href="#ara-faq"><span class="n mono">06</span><b data-en="Backup engines">Mesin cadangan</b><span data-en="Gemini quota used up? Send through Meta AI or Google Flow instead. Still nothing to pay ARA.">Jatah Gemini habis? Kirim lewat Meta AI atau Google Flow. Tetap tanpa biaya dari ARA.</span></a>
+      <a href="#ara-kontrol"><span class="n mono">07</span><b data-en="Perspective correction">Studio: Perspektif</b><span data-en="Straighten leaning verticals, plus Control Points to recolour one part of the image.">Luruskan garis tegak yang miring, plus Titik Kontrol untuk mengubah warna satu bagian.</span></a>
+      <a href="#ara-set"><span class="n mono">08</span><b data-en="Client board PDF">Papan klien PDF</b><span data-en="Arrange pages, a material list from your Notation, and a client approval sheet.">Susun halaman, daftar material dari Notasi, dan lembar persetujuan klien.</span></a>
     </div>
   </section>
 
   <section class="sec" id="ara-bukti">
-    <div class="head rv"><div><p class="kicker mono">Geser garisnya</p><h2 class="disp">Bentuknya tetap punyamu.</h2></div>
-      <p>Jendela, tangga, kantilever, tidak dipindah. ARA mengganti cahaya dan bahannya, bukan desainnya. Geser garis hijau di tiap gambar.</p></div>
+    <div class="head rv"><div><p class="kicker mono" data-en="Drag the line">Geser garisnya</p><h2 class="disp" data-en="Your design stays yours.">Bentuknya tetap punyamu.</h2></div>
+      <p data-en="Windows, stairs, cantilevers stay where you drew them. ARA changes the light and the materials, not the design. Drag the green line on each image.">Jendela, tangga, kantilever, tidak dipindah. ARA mengganti cahaya dan bahannya, bukan desainnya. Geser garis hijau di tiap gambar.</p></div>
     <div class="pairs">
-      <figure class="pair wide rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/tower-render.jpg" alt="Hasil ARA menara mixed-use malam hari"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/tower-sketchup.jpg" alt="Model menara yang sama"><div class="v"></div><figcaption class="mono"><span>Model</span><span>Hasil ARA</span></figcaption></figure>
-      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/lounge-render.webp" alt="Hasil ARA lounge kantor"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/lounge-model.webp" alt="Model SketchUp lounge"><div class="v"></div><figcaption class="mono"><span>Model</span><span>Notasi: island marmer hijau</span></figcaption></figure>
-      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/villa-render.jpg" alt="Hasil ARA rumah kantilever"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/villa-sketchup.jpg" alt="Model rumah kantilever"><div class="v"></div><figcaption class="mono"><span>Model</span><span>Hasil ARA</span></figcaption></figure>
+      <figure class="pair wide rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/tower-render.jpg" alt="Hasil ARA menara mixed-use malam hari"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/tower-sketchup.jpg" alt="Model menara yang sama"><div class="v"></div><figcaption class="mono"><span>Model</span><span data-en="ARA result">Hasil ARA</span></figcaption></figure>
+      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/lounge-render.webp" alt="Hasil ARA lounge kantor"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/lounge-model.webp" alt="Model SketchUp lounge"><div class="v"></div><figcaption class="mono"><span>Model</span><span data-en="Notation: green marble island">Notasi: island marmer hijau</span></figcaption></figure>
+      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/villa-render.jpg" alt="Hasil ARA rumah kantilever"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/villa-sketchup.jpg" alt="Model rumah kantilever"><div class="v"></div><figcaption class="mono"><span>Model</span><span data-en="ARA result">Hasil ARA</span></figcaption></figure>
     </div>
-    <p class="note mono">Semua contoh di halaman ini proyek contoh, bukan proyek klien.</p>
+    <p class="note mono" data-en="Every example on this page is a sample project, not a client project.">Semua contoh di halaman ini proyek contoh, bukan proyek klien.</p>
   </section>
 
-  <section class="sec sheet" id="ara-kontrol">
-    <div class="head rv"><div><p class="kicker mono">Kamu yang mengarahkan</p><h2 class="disp">Bukan tebak-tebakan AI.</h2></div>
-      <p>Tiga panel yang membedakan ARA dari kolom chat biasa. Ini tampilan aplikasinya, bukan ilustrasi.</p></div>
+  <section class="sec sheet" id="ara-mulai">
+    <div class="head rv"><div><p class="kicker mono" data-en="No fiddling required">Tidak perlu ngulik</p><h2 class="disp" data-en="Pick the picture, not the settings.">Pilih gambarnya, bukan setelannya.</h2></div>
+      <p data-en="36 picture presets. Pick the one closest to what you want and press GENERATE. The full settings are still there, you just don’t have to touch them.">36 preset bergambar. Pilih yang paling mirip maumu, tekan GENERATE. Setelan lengkap tetap ada, tapi tidak wajib disentuh.</p></div>
+    <div class="jadi rv">
+      <figure><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jadi-foto.webp" alt="Contoh hasil foto arsitektur"><b data-en="Photo">Foto</b><span data-en="An architectural photo from your capture.">Foto arsitektur dari capture-mu.</span></figure>
+      <figure><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jadi-cerita.webp" alt="Contoh Mode Cerita"><b data-en="Story">Cerita</b><span data-en="Your space, lived in by a fictional cast.">Ruang yang dihuni pemeran fiktif.</span></figure>
+      <figure><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jadi-maket.webp" alt="Contoh maket"><b data-en="Model">Maket</b><span data-en="A physical model on the studio desk.">Model fisik di meja studio.</span></figure>
+      <figure><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jadi-massing.webp" alt="Contoh urutan massa"><b data-en="Massing">Urutan massa</b><span data-en="How the form was shaped, step by step.">Diagram pembentukan massa, langkah demi langkah.</span></figure>
+      <figure><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jadi-sebelum.webp" alt="Contoh sebelum dan sesudah"><b data-en="Before–after">Sebelum–sesudah</b><span data-en="Lines and photo in one frame.">Garis dan foto dalam satu gambar.</span></figure>
+    </div>
+    <div class="steps rv">
+      <div><b>1</b><span data-en="Capture a scene from SketchUp, one click on the ARA toolbar.">Tangkap scene dari SketchUp, satu klik di toolbar ARA.</span></div>
+      <div><b>2</b><span data-en="Pick an example result from the gallery.">Pilih contoh hasil di galeri.</span></div>
+      <div><b>3</b><span data-en="GENERATE. The result lands in your history in about a minute.">GENERATE. Hasil masuk riwayat dalam ±1 menit.</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="ara-kontrol">
+    <div class="head rv"><div><p class="kicker mono" data-en="You direct it">Kamu yang mengarahkan</p><h2 class="disp" data-en="Not an AI guessing game.">Bukan tebak-tebakan AI.</h2></div>
+      <p data-en="Three panels that set ARA apart from a plain chat box. These are real app screens, not illustrations.">Tiga panel yang membedakan ARA dari kolom chat biasa. Ini tampilan aplikasinya, bukan ilustrasi.</p></div>
     <div class="ctrl">
-      <figure class="rv"><div class="shot"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/ui-notasi.webp" alt="Panel Notasi ARA" style="--p:40% 50%"></div><p class="mono">Notasi</p><h3>Tunjuk bidangnya, tulis bahannya.</h3><p>Tandai island, sofa, plafon. KUNCI bagian yang tidak boleh berubah.</p></figure>
-      <figure class="rv"><div class="shot"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/ui-camera.webp" alt="Panel Kamera ARA" style="--p:30% 40%"></div><p class="mono">Kamera</p><h3>Atur seperti fotografer.</h3><p>Lensa, aperture, white balance, exposure, sampai preset bodi kamera dan jam pemotretan.</p></figure>
-      <figure class="rv"><div class="shot"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/ui-darkroom.webp" alt="Darkroom ARA" style="--p:30% 50%"></div><p class="mono">Darkroom</p><h3>Warnai tanpa generate ulang.</h3><p>12 preset warna dan slider di komputermu sendiri. File asli tidak tertimpa.</p></figure>
+      <figure class="rv"><div class="shot"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/ui-notasi.webp" alt="Panel Notasi ARA" style="--p:40% 50%"></div><p class="mono" data-en="Notation">Notasi</p><h3 data-en="Point at a surface, write its material.">Tunjuk bidangnya, tulis bahannya.</h3><p data-en="Mark the island, sofa, ceiling, or send the materials straight from SketchUp. LOCK the parts that must not change.">Tandai island, sofa, plafon, atau kirim materialnya langsung dari SketchUp. KUNCI bagian yang tidak boleh berubah.</p></figure>
+      <figure class="rv"><div class="shot"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/ui-camera.webp" alt="Panel Kamera ARA" style="--p:30% 40%"></div><p class="mono" data-en="Camera">Kamera</p><h3 data-en="Set it up like a photographer.">Atur seperti fotografer.</h3><p data-en="Lens, aperture, white balance, exposure, down to camera body presets and the time of the shoot.">Lensa, aperture, white balance, exposure, sampai preset bodi kamera dan jam pemotretan.</p></figure>
+      <figure class="rv"><div class="shot"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/ui-darkroom.webp" alt="Darkroom ARA" style="--p:30% 50%"></div><p class="mono">Studio</p><h3 data-en="Polish without regenerating.">Rapikan tanpa generate ulang.</h3><p data-en="Darkroom with 12 colour presets, Perspective to straighten verticals, Control Points. On your own computer; the original is never overwritten.">Darkroom 12 preset warna, Perspektif untuk meluruskan garis tegak, Titik Kontrol. Di komputermu sendiri, file asli tidak tertimpa.</p></figure>
+    </div>
+  </section>
+
+  <section class="sec sheet" id="ara-plugin">
+    <div class="head rv"><div><p class="kicker mono" data-en="Plugins included, nothing extra to pay">Plugin ikut, tanpa bayar lagi</p><h2 class="disp" data-en="Starts inside SketchUp &amp;amp; AutoCAD.">Mulai dari SketchUp &amp; AutoCAD.</h2></div>
+      <p data-en="Since 4.10, ARA installs its own plugins into the SketchUp (2019–2026) and AutoCAD (2018–2027) already on your computer, and updates them with ARA. One licence covers everything.">Sejak 4.10, ARA memasang plugin-nya sendiri ke SketchUp (2019–2026) dan AutoCAD (2018–2027) yang ada di komputermu, dan ikut memperbaruinya. Satu lisensi untuk semuanya.</p></div>
+    <div class="plug">
+      <figure class="p-duo rv">
+        <div><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/lampu-tanpa.webp" alt="Hasil ARA kamar tidur tanpa lampu dari ARA Lampu"><span class="tg mono" data-en="Without ARA Lighting">Tanpa ARA Lampu</span></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/lampu-dengan.webp" alt="Hasil ARA kamar tidur dengan lampu indirek dari ARA Lampu"><span class="tg mono" data-en="With ARA Lighting">Dengan ARA Lampu</span></div>
+        <figcaption><b data-en="ARA Lighting">ARA Lampu</b><span data-en="Point at the ceiling edge and a cove light follows the whole edge. Downlights with IES character and surface lights in one click. Both images are ARA results from the same model.">Tunjuk tepi plafon, lampu indirek mengikuti seluruh tepinya. Downlight berkarakter IES dan lampu bidang sekali klik. Kedua gambar hasil ARA dari model yang sama.</span></figcaption>
+      </figure>
+      <figure class="card p-gk rv"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/gambar-kerja.webp" alt="Lembar gambar kerja lemari dari ARA Gambar: tampak depan, samping, atas, isometri"><figcaption class="lab"><b data-en="ARA Shop Drawing · SketchUp">ARA Gambar Kerja · SketchUp</b><span data-en="Select a cabinet: front, side, top, isometric and cut list are laid out for you. Export PDF, PNG, DXF, DWG.">Pilih lemari: tampak depan, samping, atas, isometri dan daftar potong langsung tersusun. Ekspor PDF, PNG, DXF, DWG.</span></figcaption></figure>
+      <figure class="card p-juru rv"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/juru-denah.webp" alt="Denah di AutoCAD yang digambar dengan ARA Juru"><figcaption class="lab"><b>ARA Juru · AutoCAD</b><span data-en="Floor plans for drafters: walls, doors, windows, columns, bathroom fit-out, room name and area in one click.">Denah cepat untuk drafter: dinding, pintu, jendela, kolom, isi kamar mandi, nama dan luas ruang sekali klik.</span></figcaption></figure>
+      <div class="tools rv">
+        <div><b>ARA Scene</b><span data-en="Send scenes and material data to ARA from the toolbar.">Kirim scene dan data material ke ARA dari toolbar.</span></div>
+        <div><b>ARA Face</b><span data-en="Turn flat or curved faces into real 3D geometry: tiles, panels, slats, perforation.">Bidang datar atau lengkung jadi geometri 3D: ubin, panel, kisi, perforasi.</span></div>
+        <div><b>ARA Material</b><span data-en="A built-in material library, ready to paint.">Pustaka material bawaan, siap ditempel.</span></div>
+        <div><b data-en="ARA Lighting">ARA Lampu</b><span data-en="Cove, downlight, surface light, with direction and angle.">Indirek, downlight, lampu bidang, lengkap dengan arah dan derajat.</span></div>
+        <div><b data-en="Open Version">Buka Versi</b><span data-en="Open newer .skp files in an older SketchUp.">Buka .skp versi baru di SketchUp lama.</span></div>
+        <div><b data-en="Auto-update">Pembaruan otomatis</b><span data-en="Plugins update together with ARA.">Plugin ikut diperbarui bersama ARA.</span></div>
+      </div>
     </div>
   </section>
 
   <section class="sec" id="ara-jam">
-    <div class="head rv"><div><p class="kicker mono">Jam pemotretan</p><h2 class="disp">Klien minta versi malam?</h2></div>
-      <p>Model dan kameranya sama. Hanya baris Waktu yang diganti. Geser mataharinya.</p></div>
+    <div class="head rv"><div><p class="kicker mono" data-en="Time of the shoot">Jam pemotretan</p><h2 class="disp" data-en="Client wants a night version?">Klien minta versi malam?</h2></div>
+      <p data-en="Same model, same camera. Only the Time line changes. Move the sun.">Model dan kameranya sama. Hanya baris Waktu yang diganti. Geser mataharinya.</p></div>
     <div class="sun rv">
       <div class="sun-view" id="ara-sunview">
-        <img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/jam-0630.webp" alt="Atrium pukul 06:30"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/jam-1000.webp" alt="Atrium pukul 10:00"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/jam-1730.webp" alt="Atrium pukul 17:30"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/jam-1930.webp" alt="Atrium pukul 19:30">
+        <img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jam-0630.webp" alt="Atrium pukul 06:30"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jam-1000.webp" alt="Atrium pukul 10:00"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jam-1730.webp" alt="Atrium pukul 17:30"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/jam-1930.webp" alt="Atrium pukul 19:30">
       </div>
       <div class="sun-ctl">
         <svg class="arc" viewBox="0 0 300 110" aria-hidden="true"><path d="M10 100 Q150 -40 290 100"/><circle id="ara-sundot" r="7" cx="10" cy="100"/></svg>
         <div><div class="clock" id="ara-clock">10:00</div><div class="clock-l" id="ara-clockl">Late Morning</div></div>
-        <label class="mono" for="ara-sun" style="color:var(--dim)">Geser jam</label>
+        <label class="mono" for="ara-sun" style="color:var(--dim)" data-en="Move the clock">Geser jam</label>
         <input id="ara-sun" type="range" min="0" max="3" step="0.01" value="1" aria-valuetext="10:00">
-        <p>Empat hasil ARA nyata dari satu model atrium. Bangunan dan perabot tidak bergeser, yang berubah hanya cahayanya.</p>
+        <p data-en="Four real ARA results from one atrium model. The building and furniture stay put; only the light changes.">Empat hasil ARA nyata dari satu model atrium. Bangunan dan perabot tidak bergeser, yang berubah hanya cahayanya.</p>
       </div>
     </div>
   </section>
 
   <section class="sec sheet" id="ara-set">
-    <div class="head rv"><div><p class="kicker mono">Satu model, satu set presentasi</p><h2 class="disp">Foto, tur 360, papan, diagram.</h2></div>
-      <p>Bukan cuma render. Dari model yang sama, ARA menyiapkan bahan untuk klien, sidang studio, dan kompetisi.</p></div>
+    <div class="head rv"><div><p class="kicker mono" data-en="One model, one presentation set">Satu model, satu set presentasi</p><h2 class="disp" data-en="Photos, 360 tours, boards, diagrams.">Foto, tur 360, papan, diagram.</h2></div>
+      <p data-en="Not just renders. From the same model, ARA prepares material for clients, studio reviews and competitions, down to a client board PDF with a material list and an approval sheet.">Bukan cuma render. Dari model yang sama, ARA menyiapkan bahan untuk klien, sidang studio, dan kompetisi, sampai papan klien PDF lengkap dengan daftar material dan lembar persetujuan.</p></div>
     <div class="set">
-      <figure class="card c-story rv"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/story-aisyah.webp" alt="Mode Cerita: pemeran fiktif Aisyah di lounge"><figcaption class="lab"><b>Mode Cerita</b><span>Pemeran fiktif bawaan, momennya kamu yang tulis.</span></figcaption></figure>
-      <figure class="card c-poster rv"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/poster-a1.webp" alt="Papan kompetisi A1 dari preset VIZ END GAME"><figcaption class="lab"><b>Papan kompetisi A1</b><span>Preset VIZ END GAME. Teks &amp; angka di papan ilustrasi AI, cek dulu.</span></figcaption></figure>
-      <figure class="card c-pano rv" id="ara-pano"><div class="pano" style="background-image:url(https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/panorama-lounge.webp)" role="img" aria-label="Panorama 360 lounge, geser untuk memutar"></div><figcaption class="lab"><b>Tur 360</b><span>Geser untuk memutar. Klien membukanya di browser HP.</span></figcaption></figure>
-      <figure class="card c-diag rv"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/diagram-lapisan.webp" alt="Diagram lapisan villa"><figcaption class="lab"><b>Diagram lapisan</b><span>Lantai, sirkulasi, zona, selubung, peneduh.</span></figcaption></figure>
+      <figure class="card c-story rv"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/story-aisyah.webp" alt="Mode Cerita: pemeran fiktif Aisyah di lounge"><figcaption class="lab"><b data-en="Story Mode">Mode Cerita</b><span data-en="Built-in fictional cast, props, captions, a set of 4 photos, or one day from morning to night.">Pemeran fiktif bawaan, properti, caption, set 4 foto, atau satu hari dari pagi ke malam.</span></figcaption></figure>
+      <figure class="card c-poster rv"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/poster-a1.webp" alt="Papan kompetisi A1 dari preset VIZ END GAME"><figcaption class="lab"><b data-en="A1 competition board">Papan kompetisi A1</b><span data-en="VIZ END GAME preset. Text and figures on the board are AI illustration; check them first.">Preset VIZ END GAME. Teks &amp; angka di papan ilustrasi AI, cek dulu.</span></figcaption></figure>
+      <figure class="card c-pano rv" id="ara-pano"><div class="pano" style="background-image:url(https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/panorama-lounge.webp)" role="img" aria-label="Panorama 360 lounge, geser untuk memutar"></div><figcaption class="lab"><b data-en="360 tour">Tur 360</b><span data-en="Drag to turn. Clients open it in their phone browser.">Geser untuk memutar. Klien membukanya di browser HP.</span></figcaption></figure>
+      <figure class="card c-diag rv"><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/diagram-lapisan.webp" alt="Diagram lapisan villa"><figcaption class="lab"><b data-en="Layer diagram">Diagram lapisan</b><span data-en="Floors, circulation, zones, envelope, shading.">Lantai, sirkulasi, zona, selubung, peneduh.</span></figcaption></figure>
     </div>
   </section>
 
   <section class="sec" id="ara-software">
-    <div class="head rv"><div><p class="kicker mono">Bukan cuma SketchUp</p><h2 class="disp">Revit. Blender. 3ds Max.</h2></div>
-      <p>Tangkap viewport-nya, lalu GENERATE. Tangkapan di bawah contoh buatan AI dari gaya tiap software, hasilnya dari ARA.</p></div>
+    <div class="head rv"><div><p class="kicker mono" data-en="Not only SketchUp">Bukan cuma SketchUp</p><h2 class="disp">Revit. Blender. 3ds Max.</h2></div>
+      <p data-en="Capture the viewport, then GENERATE. The captures below are AI-made examples in each software’s style; the results are from ARA.">Tangkap viewport-nya, lalu GENERATE. Tangkapan di bawah contoh buatan AI dari gaya tiap software, hasilnya dari ARA.</p></div>
     <div class="soft">
-      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/sw-revit-ara.webp" alt="Hasil ARA perpustakaan"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/sw-revit-cap.webp" alt="Tangkapan gaya Revit"><div class="v"></div><figcaption class="mono"><span>Revit</span><span>ARA</span></figcaption></figure>
-      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/sw-blender-ara.webp" alt="Hasil ARA rumah tropis"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/sw-blender-cap.webp" alt="Tangkapan gaya Blender"><div class="v"></div><figcaption class="mono"><span>Blender</span><span>ARA</span></figcaption></figure>
-      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/sw-max-ara.webp" alt="Hasil ARA lobi hotel"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@2b591889e797170304d750e99930423f89f5d813/docs/landing/img/sw-max-cap.webp" alt="Tangkapan gaya 3ds Max"><div class="v"></div><figcaption class="mono"><span>3ds Max</span><span>ARA</span></figcaption></figure>
+      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/sw-revit-ara.webp" alt="Hasil ARA perpustakaan"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/sw-revit-cap.webp" alt="Tangkapan gaya Revit"><div class="v"></div><figcaption class="mono"><span>Revit</span><span>ARA</span></figcaption></figure>
+      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/sw-blender-ara.webp" alt="Hasil ARA rumah tropis"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/sw-blender-cap.webp" alt="Tangkapan gaya Blender"><div class="v"></div><figcaption class="mono"><span>Blender</span><span>ARA</span></figcaption></figure>
+      <figure class="pair rv" data-pair><img src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/sw-max-ara.webp" alt="Hasil ARA lobi hotel"><img class="m" src="https://cdn.jsdelivr.net/gh/gigihwicaksono09-spec/ARA_AURUM@dcae0ba0b2fe977ac757737f32b69b925c5d606c/docs/landing/img/sw-max-cap.webp" alt="Tangkapan gaya 3ds Max"><div class="v"></div><figcaption class="mono"><span>3ds Max</span><span>ARA</span></figcaption></figure>
     </div>
   </section>
 
   <section class="sec sheet" id="ara-harga">
-    <div class="head rv"><div><p class="kicker mono">Harga</p><h2 class="disp">Coba dulu. Bayar sekali.</h2></div>
-      <p>Generate lewat akun Gemini-mu sendiri, jadi tidak ada biaya per gambar dari ARA.</p></div>
+    <div class="head rv"><div><p class="kicker mono" data-en="Pricing">Harga</p><h2 class="disp" data-en="Try first. Pay once.">Coba dulu. Bayar sekali.</h2></div>
+      <p data-en="You generate through your own Gemini account, so ARA charges nothing per image.">Generate lewat akun Gemini-mu sendiri, jadi tidak ada biaya per gambar dari ARA.</p></div>
     <div class="price rv">
-      <div class="tier"><p class="mono">Coba dulu</p><div class="amt">Gratis</div>
-        <ul><li>7 prompt berbeda, 5 hari sejak prompt pertama</li><li>Tanpa kartu kredit, tanpa data pembayaran</li><li>Gambar yang sudah jadi tetap bisa diunduh</li><li>Berhenti sendiri, tidak ada tagihan menyusul</li></ul>
-        <a class="btn btn-ink" href="https://github.com/gigihwicaksono09-spec/ARA_AURUM/releases/latest">Unduh aplikasinya <i>↓</i></a></div>
-      <div class="tier buy"><p class="mono">Miliki</p><div class="amt">Rp399rb</div>
-        <ul><li>Sekali bayar, lisensi seumur hidup</li><li>1 lisensi untuk 2 perangkat</li><li>Semua mode: interior, arsitektur, floor plan, close-up</li><li>Notasi, Kamera, Darkroom, Mode Cerita, 360, papan presentasi</li><li>Update ke versi berikutnya</li></ul>
-        <a class="btn btn-lime" href="https://lynk.id/ara.workflow/z3nkgx5mv6kd/checkout">Beli sekarang · Rp399.000 <i>→</i></a></div>
+      <div class="tier"><p class="mono" data-en="Try first">Coba dulu</p><div class="amt" data-en="Free">Gratis</div>
+        <ul><li data-en="7 different prompts, 5 days from your first prompt">7 prompt berbeda, 5 hari sejak prompt pertama</li><li data-en="No credit card, no payment details">Tanpa kartu kredit, tanpa data pembayaran</li><li data-en="Finished images stay downloadable">Gambar yang sudah jadi tetap bisa diunduh</li><li data-en="It simply stops; no bill follows">Berhenti sendiri, tidak ada tagihan menyusul</li></ul>
+        <a class="btn btn-ink" href="https://github.com/gigihwicaksono09-spec/ARA_AURUM/releases/latest" data-en="Download the app <i>↓</i>">Unduh aplikasinya <i>↓</i></a></div>
+      <div class="tier buy"><p class="mono" data-en="Own it">Miliki</p><div class="amt">Rp399rb</div>
+        <ul><li data-en="One payment, lifetime licence">Sekali bayar, lisensi seumur hidup</li><li data-en="1 licence for 2 computers">1 lisensi untuk 2 perangkat</li><li data-en="All modes: interior, architecture, floor plan, close-up">Semua mode: interior, arsitektur, floor plan, close-up</li><li data-en="Notation, Camera, Studio, Story Mode, 360, client boards">Notasi, Kamera, Studio, Mode Cerita, 360, papan klien</li><li data-en="SketchUp plugins and ARA Juru for AutoCAD">Plugin SketchUp dan ARA Juru untuk AutoCAD</li><li data-en="Updates to future versions">Update ke versi berikutnya</li></ul>
+        <a class="btn btn-lime" href="https://lynk.id/ara.workflow/z3nkgx5mv6kd/checkout" data-en="Buy now · Rp399,000 <i>→</i>">Beli sekarang · Rp399.000 <i>→</i></a></div>
     </div>
   </section>
 
   <section class="sec" id="ara-faq">
-    <div class="head rv"><div><p class="kicker mono">Sebelum kamu memutuskan</p><h2 class="disp">Termasuk kurangnya.</h2></div>
-      <p>Tutorial: <a href="https://drive.google.com/file/d/1rhSquwMSgcH6dIUFO4xHa9ojrM17TTv_/view" style="color:var(--lime)">dasar ↗</a> · <a href="https://drive.google.com/file/d/1pD5tXC4LggYby-s0AAK5WCbTdhvZiuln/view" style="color:var(--lime)">lengkap ↗</a></p></div>
+    <div class="head rv"><div><p class="kicker mono" data-en="Before you decide">Sebelum kamu memutuskan</p><h2 class="disp" data-en="Shortcomings included.">Termasuk kurangnya.</h2></div>
+      <p data-en="Full tutorial on YouTube: &lt;a href=&quot;https://youtu.be/yC0garhDLo8&quot; style=&quot;color:var(--lime)&quot;&gt;watch ↗&lt;/a&gt;">Tutorial lengkap di YouTube: <a href="https://youtu.be/nSwDVfrmlOQ" style="color:var(--lime)">tonton ↗</a></p></div>
     <div class="honest rv">
-      <div><b>Sistem</b>Windows saja untuk saat ini, belum ada versi Mac.</div>
-      <div><b>Internet</b>Perlu, untuk validasi lisensi dan generate lewat Gemini.</div>
-      <div><b>Lisensi</b>Aktif di 2 komputer. Ganti komputer dan slot penuh? Hubungi kami, dibantu.</div>
-      <div><b>Jujur saja</b>Alat bantu alur kerja, bukan tombol ajaib. Komposisi tetap dari kamu.</div>
+      <div><b data-en="System">Sistem</b><span data-en="Windows only for now; no Mac version yet.">Windows saja untuk saat ini, belum ada versi Mac.</span></div>
+      <div><b>Internet</b><span data-en="Needed for licence checks and generating through Gemini.">Perlu, untuk validasi lisensi dan generate lewat Gemini.</span></div>
+      <div><b data-en="Licence">Lisensi</b><span data-en="Active on 2 computers. Changed computers and slots are full? Contact us, we’ll help.">Aktif di 2 komputer. Ganti komputer dan slot penuh? Hubungi kami, dibantu.</span></div>
+      <div><b data-en="Honestly">Jujur saja</b><span data-en="AI can still shift small details. Lock what matters with Notation and check before sending to a client.">AI masih bisa menggeser detail kecil. Kunci yang penting dengan Notasi, cek sebelum dikirim ke klien.</span></div>
     </div>
     <div class="rv">
-      <details><summary>Bayar lagi tiap bulan?</summary><p>Tidak. Rp399.000 dibayar sekali di awal, lisensi berlaku seumur hidup.</p></details>
-      <details><summary>Generate gambarnya berbayar per pemakaian?</summary><p>Tidak untuk jalur utama. ARA menggerakkan Gemini Web lewat akun Google kamu sendiri, tanpa biaya tambahan dari ARA. Kuota mengikuti akun Gemini kamu. API key berbayar sifatnya opsional.</p></details>
-      <details><summary>Harus bisa render dulu?</summary><p>Tidak. ARA dibuat supaya kamu tidak perlu menguasai render engine. Yang tetap perlu: model 3D dan selera komposisi.</p></details>
-      <details><summary>Key-nya kapan datang setelah bayar?</summary><p>Otomatis dikirim ke email yang kamu isi saat checkout, biasanya dalam beberapa menit.</p></details>
-      <details><summary>Bisa coba tanpa bayar?</summary><p>Bisa. Unduh aplikasinya, buka, klik "Coba Gratis" di layar aktivasi: 7 prompt berbeda selama 5 hari.</p></details>
+      <details><summary data-en="Do I pay again every month?">Bayar lagi tiap bulan?</summary><p data-en="No. Rp399,000 once, and the licence is valid for life.">Tidak. Rp399.000 dibayar sekali di awal, lisensi berlaku seumur hidup.</p></details>
+      <details><summary data-en="Are the plugins sold separately?">Plugin-nya bayar terpisah?</summary><p data-en="No. The SketchUp plugins and ARA Juru come with the same licence. ARA installs them into the SketchUp (2019–2026) and AutoCAD (2018–2027) versions it finds on your computer.">Tidak. Plugin SketchUp dan ARA Juru ikut lisensi yang sama. ARA memasangnya sendiri ke SketchUp (2019–2026) dan AutoCAD (2018–2027) yang terdeteksi di komputermu.</p></details>
+      <details><summary data-en="Is generating paid per use?">Generate gambarnya berbayar per pemakaian?</summary><p data-en="Not on the main path. ARA drives Gemini Web through your own Google account, with no extra cost from ARA. Your quota follows your Gemini account. A paid API key is optional.">Tidak untuk jalur utama. ARA menggerakkan Gemini Web lewat akun Google kamu sendiri, tanpa biaya tambahan dari ARA. Kuota mengikuti akun Gemini kamu. API key berbayar sifatnya opsional.</p></details>
+      <details><summary data-en="What if my Gemini quota runs out?">Kalau jatah Gemini habis?</summary><p data-en="Gemini’s daily quota is limited per account. ARA can send through Meta AI or Google Flow instead, also on your own accounts. ARA also picks the Gemini mode that stays most faithful to your design automatically.">Jatah Gemini terbatas per hari per akun. ARA bisa mengirim lewat Meta AI atau Google Flow, juga memakai akunmu sendiri. ARA juga otomatis memilih mode Gemini yang paling setia pada bentuk desainmu.</p></details>
+      <details><summary data-en="Do I need to know rendering?">Harus bisa render dulu?</summary><p data-en="No. ARA is made so you don’t have to master a render engine. What you still need: a 3D model and an eye for composition.">Tidak. ARA dibuat supaya kamu tidak perlu menguasai render engine. Yang tetap perlu: model 3D dan selera komposisi.</p></details>
+      <details><summary data-en="When does my key arrive after paying?">Key-nya kapan datang setelah bayar?</summary><p data-en="Automatically, to the email you enter at checkout, usually within minutes.">Otomatis dikirim ke email yang kamu isi saat checkout, biasanya dalam beberapa menit.</p></details>
+      <details><summary data-en="Can I try without paying?">Bisa coba tanpa bayar?</summary><p data-en="Yes. Download the app, open it, click “Try Free” on the activation screen: 7 different prompts over 5 days.">Bisa. Unduh aplikasinya, buka, klik "Coba Gratis" di layar aktivasi: 7 prompt berbeda selama 5 hari.</p></details>
     </div>
   </section>
 
   <section class="sec end" id="ara-akhir">
-    <p class="kicker mono" style="color:var(--lime)">Modelmu sudah siap</p>
-    <p class="big disp">Coba.</p>
-    <div class="row"><p>Unduh, buka, klik Coba Gratis. Tujuh prompt cukup untuk tahu apakah ARA cocok dengan cara kerjamu.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-lime" href="https://github.com/gigihwicaksono09-spec/ARA_AURUM/releases/latest">Coba gratis <i>↓</i></a><a class="btn btn-ghost" href="https://lynk.id/ara.workflow/z3nkgx5mv6kd/checkout">Beli · Rp399.000 <i>→</i></a></div></div>
+    <p class="kicker mono" style="color:var(--lime)" data-en="Your model is ready">Modelmu sudah siap</p>
+    <p class="big disp" data-en="Try.">Coba.</p>
+    <div class="row"><p data-en="Download, open, click Try Free. Seven prompts are enough to know whether ARA fits the way you work.">Unduh, buka, klik Coba Gratis. Tujuh prompt cukup untuk tahu apakah ARA cocok dengan cara kerjamu.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-lime" href="https://github.com/gigihwicaksono09-spec/ARA_AURUM/releases/latest" data-en="Try free <i>↓</i>">Coba gratis <i>↓</i></a><a class="btn btn-ghost" href="https://lynk.id/ara.workflow/z3nkgx5mv6kd/checkout" data-en="Buy · Rp399,000 <i>→</i>">Beli · Rp399.000 <i>→</i></a></div></div>
   </section>
-  <footer class="foot mono"><span>ARA V5 AURUM · Architectural Realism Accelerator</span><span>Dibuat di Indonesia</span></footer>
+  <footer class="foot mono"><span>ARA V5 AURUM 4.10 · Architectural Realism Accelerator</span><span data-en="Made in Indonesia">Dibuat di Indonesia</span></footer>
 
 <script>
 (function(){
   var R=document.querySelector('.ara5');if(!R)return;R.classList.remove('nojs');
   var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // BAHASA: teks ID ada di HTML, teks EN di data-en. Bawaan selalu ID; pilihan pengunjung diingat.
+  var T=R.querySelectorAll('[data-en]'),LB=R.querySelectorAll('.lang button');
+  function lang(l){T.forEach(function(el){if(!el.hasAttribute('data-id'))el.setAttribute('data-id',el.innerHTML);el.innerHTML=el.getAttribute(l==='en'?'data-en':'data-id')});
+    R.setAttribute('lang',l);LB.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-lang')===l)});try{localStorage.setItem('araLang',l)}catch(e){}
+    if(stage)setY(parseFloat(stage.style.getPropertyValue('--y'))||100)}   // judul berganti tinggi → hitung ulang potongan huruf
+  LB.forEach(function(b){b.addEventListener('click',function(){lang(b.getAttribute('data-lang'))})});
   // HERO: garis render menyapu ke bawah (di atasnya foto & huruf solid, di bawahnya sketsa & huruf garis).
   // Main sendiri saat hero terlihat (diulang tiap kali terlihat lagi); pengunjung juga bisa menyeret garisnya.
   var stage=R.querySelector('.hero-stage'),title=R.querySelector('.hero-title'),run=null,held=false;
@@ -297,7 +419,9 @@
   stage.addEventListener('pointerdown',function(e){if(e.target.closest('a'))return;held=true;cancelAnimationFrame(run);stage.setPointerCapture(e.pointerId);dragY(e)});
   stage.addEventListener('pointermove',function(e){if(held)dragY(e)});
   stage.addEventListener('pointerup',function(){held=false});stage.addEventListener('pointercancel',function(){held=false});
-  setY(100);   // tanpa IO yang terbukti jalan: langsung keadaan foto (aman)addEventListener('resize',function(){setY(parseFloat(stage.style.getPropertyValue('--y'))||0)});
+  setY(100);   // tanpa IO yang terbukti jalan: langsung keadaan foto (aman)
+  addEventListener('resize',function(){setY(parseFloat(stage.style.getPropertyValue('--y'))||0)});
+  try{if(localStorage.getItem('araLang')==='en')lang('en')}catch(e){}
   // IO di iframe Lynk tak selalu menyala (11/10: konten kosong) → efek muncul HANYA aktif sesudah IO terbukti memanggil balik
   var ioOk=false;try{new IntersectionObserver(function(es){es.forEach(function(e){if(!ioOk){ioOk=true;R.classList.add('io');if(e.isIntersecting&&!held){setY(0);sweep()}}else if(e.isIntersecting&&!held)sweep()})},{threshold:.6}).observe(stage)}catch(err){}
   // PASANGAN: geser garis, sapuan otomatis saat pertama terlihat
