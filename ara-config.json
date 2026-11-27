@@ -1,5 +1,5 @@
 {
-  "configVersion": 44,
+  "configVersion": 45,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,11 +63,11 @@
     }
   },
   "announcement": {
-    "id": "v4.10.17",
+    "id": "v4.10.18",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.17 — Kirim Data dari ARA Scene: scene dan material SketchUp langsung masuk ke jendela Data Scene di ARA dengan area dan bahan sudah terisi, tinggal periksa lalu GENERATE. Tekstur SketchUp yang tampak bisa jadi gambar acuan bahan. Panel ARA Scene tampil baru dan lebih ringkas. Ada lonceng pembaruan di ARA, ARA Scene, dan Juru Gambar. Juru Gambar (AutoCAD 2025–2027): Plot massal menebak kop sendiri dan menggabung semua lembar jadi satu PDF. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.17 — Send Data from ARA Scene: SketchUp scenes and materials go straight into the Scene Data window in ARA with areas and materials already filled in, so you just check and GENERATE. Visible SketchUp textures can be used as material reference images. The ARA Scene panel has a new, more compact look. An update bell now appears in ARA, ARA Scene and Juru Gambar. Juru Gambar (AutoCAD 2025–2027): batch plot finds title blocks by itself and joins all sheets into one PDF. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.18 — Kirim ke ARA dari ARA Scene jauh lebih cepat: model besar yang dulu berhenti beberapa menit per scene kini selesai dalam hitungan detik (paling terasa di model berlampu bidang dan banyak material). Perbarui plugin ARA Scene lewat lonceng di ARA. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.18 — Send to ARA from ARA Scene is much faster: large models that used to stall for minutes per scene now finish in seconds (most noticeable on models with panel lights and many materials). Update the ARA Scene plugin via the bell in ARA. The update installs automatically when the app opens."
   },
   "geminiMode": {
     "aktif": true,
