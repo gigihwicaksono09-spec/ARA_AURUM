@@ -1,5 +1,5 @@
 {
-  "configVersion": 45,
+  "configVersion": 46,
   "minAppVersion": "5.0.0",
   "webSelectors": {
     "textbox": [
@@ -63,11 +63,11 @@
     }
   },
   "announcement": {
-    "id": "v4.10.18",
+    "id": "v4.10.19",
     "level": "info",
     "showOnce": true,
-    "msg_id": "ARA 4.10.18 — Kirim ke ARA dari ARA Scene jauh lebih cepat: model besar yang dulu berhenti beberapa menit per scene kini selesai dalam hitungan detik (paling terasa di model berlampu bidang dan banyak material). Perbarui plugin ARA Scene lewat lonceng di ARA. Update terpasang otomatis saat aplikasi dibuka.",
-    "msg_en": "ARA 4.10.18 — Send to ARA from ARA Scene is much faster: large models that used to stall for minutes per scene now finish in seconds (most noticeable on models with panel lights and many materials). Update the ARA Scene plugin via the bell in ARA. The update installs automatically when the app opens."
+    "msg_id": "ARA 4.10.19 — Render dari Data Scene (Kirim ke ARA) kini selalu memakai kunci geometri dan kamera, jadi hasilnya lebih konsisten dengan model. Bentuk plafon (bulkhead, undakan, lengkung) juga lebih terjaga. Update terpasang otomatis saat aplikasi dibuka.",
+    "msg_en": "ARA 4.10.19 — Renders from Data Scene (Send to ARA) now always use the geometry and camera lock, so results stay closer to the model. Ceiling shapes (bulkheads, steps, curves) are kept better too. The update installs automatically when the app opens."
   },
   "geminiMode": {
     "aktif": true,
